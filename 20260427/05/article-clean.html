@@ -1,0 +1,85 @@
+<div><div><div><div><div></div></div></div><div><div><div><div><div><div><div></div><div><div><div></div><div><div><a href="/zodchiii"><div><div></div></div><div><div></div></div><div><div><div></div><div><div><div></div><img alt="" src="https://pbs.twimg.com/profile_images/1999509933302124544/ABxY9N7S_normal.jpg"></div></div></div></div><div><div></div></div></a></div></div></div></div></div></div></div></div></div><div><div><div><div><div><div><div><div><a href="/zodchiii"><div><div><span><span>darkzodchi</span></span></div><div><span><svg><g><path></path></g></svg></span></div></div></a></div></div><div><div><div><a href="/zodchiii"><div><span>@zodchiii</span></div></a></div></div></div></div></div></div><div><div><div><button type="button"><div><div><div></div><div><svg><g><path></path></g></svg></div></div></div></button></div><div><div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div></div></button></div></div></div></div></div></div></div></div></div><div><div></div><div><div><div><div><div><div><a href="/zodchiii/article/2048683276194185640/media/2048673193574211585"><div><div></div><div><div><div></div><img alt="Image" src="https://pbs.twimg.com/media/HG5ZakvbIAERZhb?format=jpg&amp;name=small"></div></div></div></a></div></div></div></div></div><div><div><div><span>The CLAUDE.md File That 10x'd My Output (Full File Included)</span></div></div><div><div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div><div><span><span><span>8</span></span></span></div></div></button></div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div><div><span><span><span>14</span></span></span></div></div></button></div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div><div><span><span><span>74</span></span></span></div></div></button></div><div><a href="/zodchiii/status/2048683276194185640/analytics"><div><div><div></div><svg><g><path></path></g></svg></div><div><span><span><span>4.2K</span></span></span></div></div></a></div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div></div></button></div><div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div></div></button></div></div></div></div><div><div><div><div><div><div><div><div><span><span>Every Claude Code session starts by reading one file: CLAUDE.md. Before your first prompt, before any code, before anything happens, Claude reads this file and treats it as ground truth for the entire session.</span></span></div></div><div><div><span><span>Most people either don't have one, or theirs is 300 lines of personality instructions.</span></span></div></div><div><div><span><span>The difference between a good CLAUDE.md and a bad one is the difference between onboarding a senior engineer with a clear brief and throwing a new hire into a codebase with no documentation.</span></span></div></div><div><div><span><span>Here's how to write one that actually works</span></span><span><span><span><span>👇</span></span></span></span></div></div><div><div><span><span>Before we dive in, I share daily notes on AI &amp; vibe coding in my Telegram channel: </span></span><div><a href="https://t.me/zodchixquant"><span><span>https://t.me/zodchixquant</span></span></a></div><span><span><span><span>🧠</span></span></span></span></div></div><section><div><div><div><div><div><a href="/zodchiii/article/2048683276194185640/media/2048670095564795905"><div><div></div><div><div><div></div><img alt="Image" src="https://pbs.twimg.com/media/HG5WmPwa8AEJAU6?format=jpg&amp;name=small"></div></div></div></a></div></div></div></div></div></section><div><h2><div><span><span>Why most CLAUDE.md files don't work</span></span></div></h2></div><div><div><span><span>Three reasons:</span></span></div></div><div><div><span><span>Too long.</span></span><span><span> Models can reliably follow about 150-200 instructions. Claude Code's system prompt already contains roughly 50. That means your CLAUDE.md gets maybe 100-150 instructions before Claude starts dropping things. If your file is 200+ lines, Claude isn't ignoring your rules on purpose.</span></span></div></div><div><div><span><span>Wrong content.</span></span><span><span> Most people fill CLAUDE.md with things Claude can figure out on its own. Personality instructions like "be a senior engineer" or "think step by step." General advice that doesn't change Claude's behavior. Every line that doesn't prevent a specific mistake is a wasted instruction.</span></span></div></div><div><div><span><span>No hierarchy.</span></span><span><span> CLAUDE.md isn't the only place to put instructions. There are three levels and most people dump everything into one:</span></span></div></div><section><div><div><div><div></div><div><button type="button"><div><svg><g><path></path></g></svg><div><span></span></div></div></button></div></div><pre><code><span>~/.claude/CLAUDE.md       → Global (every project)
+</span>.claude/CLAUDE.md         → Project (shared with team, in git)  
+./CLAUDE.local.md         → Local (personal overrides, gitignored)</code></pre></div></div></section><div><div><span><span>Global is for rules you'd repeat in every project. Project is for stack-specific context your team needs. Local is for your personal quirks. </span></span></div></div><div><div><span><span>Using all three keeps each file short and focused.</span></span></div></div><section><div><div><div><div><div><a href="/zodchiii/article/2048683276194185640/media/2048670367930253312"><div><div></div><div><div><div></div><img alt="Image" src="https://pbs.twimg.com/media/HG5W2GZaAAAvpag?format=jpg&amp;name=small"></div></div></div></a></div></div></div></div></div></section><div><h2><div><span><span>The 5 sections that actually matter</span></span></div></h2></div><div><div><span><span>After going through dozens of production CLAUDE.md files from open-source projects, Anthropic's own docs, and community best practices repos, every effective file covers these 5 things:</span></span></div></div><div><h2><div><span><span>1. Critical commands</span></span></div></h2></div><div><div><span><span>Claude doesn't know how to build, test, or lint your project = tell it.</span></span></div></div><section><div><div><div><div></div><div><button type="button"><div><svg><g><path></path></g></svg><div><span></span></div></div></button></div></div><pre><code><span>## Commands
+</span>- Build: `npm run build`
+- Dev: `npm run dev`  
+- Test single file: `npm test -- path/to/file`
+- Lint + fix: `npm run lint:fix`
+- Type check: `npx tsc --noEmit`</code></pre></div></div></section><div><div><span><span>Short and specific. Claude runs these instead of guessing. Without this section, Claude will try npm test when your project uses pnpm vitest and waste 3 turns debugging a command that was never going to work.</span></span></div></div><div><h2><div><span><span>2. Architecture map</span></span></div></h2></div><div><div><span><span>Claude starts every session with zero knowledge of your codebase. Give it a map.</span></span></div></div><section><div><div><div><div></div><div><button type="button"><div><svg><g><path></path></g></svg><div><span></span></div></div></button></div></div><pre><code><span>## Architecture  
+</span>- src/lib/services/ → all business logic
+- src/components/ → stateless UI components only
+- src/lib/store/ → global state (Zustand)
+- src/app/api/ → API routes, no business logic here
+- Database access only through Server Actions or API routes</code></pre></div></div></section><div><div><span><span>Not a full directory listing. Just enough so Claude knows where things live and what goes where. </span></span></div></div><div><h2><div><span><span>3. Hard rules (the things Claude gets wrong without you)</span></span></div></h2></div><div><div><span><span>This is the most important section. Every rule here should answer: "Would removing this line cause Claude to make a mistake?"</span></span></div></div><section><div><div><div><div></div><div><button type="button"><div><svg><g><path></path></g></svg><div><span></span></div></div></button></div></div><pre><code><span>## Rules
+</span>- NEVER commit .env files or secrets
+- All async calls must use try/catch
+- Use functional components only, no class components
+- Prefix commits: feat:, fix:, docs:, refactor:
+- All PRs must pass `npm run verify` before merge
+- Static export only, no SSR (deployed to S3)
+- IMPORTANT: run type check after every code change</code></pre></div></div></section><div><div><span><span>Two things to notice: 
+1. negative rules are as important as positive ones ("never commit .env")</span></span></div></div><div><div><span><span>2. emphasis markers like IMPORTANT actually work.</span></span></div></div><div><div><span><span>Anthropic's own docs confirm that adding "IMPORTANT" or "YOU MUST" improves adherence.</span></span></div></div><div><div><span><span>Keep this section under 15 rules.</span></span></div></div><div><h2><div><span><span>4. Workflow preferences</span></span></div></h2></div><div><div><span><span>How do you want Claude to work? This prevents the "Claude rewrites your entire file when you asked for a one-line fix" problem.</span></span></div></div><section><div><div><div><div></div><div><button type="button"><div><svg><g><path></path></g></svg><div><span></span></div></div></button></div></div><pre><code><span>## Workflow
+</span>- Ask clarifying questions before starting complex tasks
+- Make minimal changes, don't refactor unrelated code
+- Run tests after every change, fix failures before moving on
+- Create separate commits per logical change, not one giant commit
+- When unsure between two approaches, explain both and let me choose</code></pre></div></div></section><div><h2><div><span><span>5. What NOT to include</span></span></div></h2></div><div><div><span><span>Equally important is what you leave out:</span></span></div></div><section><div><div><div><div></div><div><button type="button"><div><svg><g><path></path></g></svg><div><span></span></div></div></button></div></div><pre><code><span>## Don't include:
+</span>- Personality instructions ("be a senior engineer")
+- Code formatting rules your linter already handles  
+- @-imports that embed entire docs into every session
+- Duplicate rules (if global says "run tests," project doesn't repeat it)
+- Anything Claude will learn on its own via auto memory</code></pre></div></div></section><div><div><span><span>Auto memory is underrated here. Claude maintains its own notes at </span></span><span><span>~/.claude/projects/&lt;project&gt;/memory/.</span></span><span><span> Run </span></span><span><span>/memory</span></span><span><span> to see what Claude has already learned about your project. </span></span></div></div><div><div><span><span>Don't waste CLAUDE.md lines on things Claude figured out after one session.</span></span></div></div><section><div><div><div><div><div><a href="/zodchiii/article/2048683276194185640/media/2048671323552174080"><div><div></div><div><div><div></div><img alt="Image" src="https://pbs.twimg.com/media/HG5XtuXbUAAprGS?format=jpg&amp;name=small"></div></div></div></a></div></div></div></div></div></section><div><h2><div><span><span>The full template (copy this)</span></span></div></h2></div><div><div><span><span>Here's a production-ready CLAUDE.md you can copy and adapt. Under 60 lines. Covers everything Claude needs, nothing it doesn't.</span></span></div></div><section><div><div><div><div></div><div><button type="button"><div><svg><g><path></path></g></svg><div><span></span></div></div></button></div></div><pre><code><span># CLAUDE.md
+</span>
+## Project
+[One line: what this project does and who uses it]
+
+## Stack  
+[Framework, language, database, deployment target]
+
+## Commands
+- Dev: `[command]`
+- Build: `[command]`
+- Test single: `[command] -- [path]`
+- Test all: `[command]`
+- Lint: `[command]`
+- Type check: `[command]`
+
+## Architecture
+- [folder] → [what lives here]
+- [folder] → [what lives here]
+- [folder] → [what lives here]
+- [file] → [what this file does]
+
+## Rules
+- [Rule that prevents a specific mistake]
+- [Rule that prevents a specific mistake]
+- [Rule that prevents a specific mistake]
+- IMPORTANT: [The one rule Claude keeps breaking]
+
+## Workflow
+- [How you want Claude to approach tasks]
+- [Commit conventions]
+- [Testing expectations]
+- [When to ask vs when to act]
+
+## Out of scope
+- [Things Claude should not touch]
+- [Files that are manually maintained]
+- [Integrations Claude shouldn't modify]
+</code></pre></div></div></section><div><div><span><span>Delete sections that don't apply. </span></span></div></div><div><h2><div><span><span>The rules that change everything</span></span></div></h2></div><div><div><span><span>After testing dozens of CLAUDE.md configurations, these are the lines that made the biggest difference in output quality:</span></span></div></div><section><div><div><div><div></div><div><button type="button"><div><svg><g><path></path></g></svg><div><span></span></div></div></button></div></div><pre><code><span># The lines with highest impact:
+</span>
+- IMPORTANT: run type check after every code change
+  (prevents Claude from shipping broken types)
+
+- Make minimal changes, don't refactor unrelated code  
+  (prevents Claude from rewriting your entire file)
+
+- Create separate commits per logical change
+  (prevents the 47-file monster commit)
+
+- When unsure, explain both approaches and let me choose
+  (prevents Claude from making architectural decisions for you)
+
+- Static export only, no SSR
+  (prevents Claude from adding server-side code to a static site)
+</code></pre></div></div></section><div><div><span><span>Each of these prevents a specific, common mistake. </span></span></div></div><div><div><span><span>That's the test for every line in your CLAUDE.md: does removing it cause Claude to do the wrong thing?</span></span></div></div><div><h2><div><span><span>The mistake everyone makes</span></span></div></h2></div><div><div><span><span>People treat CLAUDE.md like a wish list.</span></span></div></div><div><div><span><span>Your CLAUDE.md should be a technical brief, not a motivational speech. Stack, commands, architecture, rules, workflow. Everything else is noise competing for attention with the instructions that actually matter.</span></span></div></div><div><div><span><span>Keep it under 80 lines. Review it when Claude gets something wrong. </span></span></div></div><div><div><span><span>The file compounds over time. A good CLAUDE.md in month one saves you from repeating yourself. </span></span></div></div><div><div><span><span>By month six it's captured every mistake Claude has ever made in your project and prevents all of them automatically.</span></span></div></div><div><div><span><span>I share daily notes on AI, finance, and vibe coding in my Telegram channel: </span></span><div><a href="https://t.me/zodchixquant"><span><span>https://t.me/zodchixquant</span></span></a></div></div></div><section><div><div><div><div><div><a href="/zodchiii/article/2048683276194185640/media/2048672984290959360"><div><div></div><div><div><div></div><img alt="Image" src="https://pbs.twimg.com/media/HG5ZOZGaIAAQqrJ?format=jpg&amp;name=small"></div></div></div></a></div></div></div></div></div></section><div><div><span><br></span></div></div></div></div></div></div></div></div><div><div><div><svg><g><path></path></g></svg><div><div><span>Want to publish your own Article?</span></div><a href="/i/premium_sign_up"><span>Upgrade to Premium</span></a></div></div></div></div></div></div><div><div><div><div><div><a href="/zodchiii/status/2048683276194185640"><time>4:38 PM · Apr 27, 2026</time></a></div><div><span>·</span></div><a href="/zodchiii/status/2048683276194185640/analytics"><div><span><span><span>4,233</span></span></span></div> <span><span>Views</span></span></a></div></div><div></div></div></div><div><div><div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div><div><span><span><span>8</span></span></span></div></div></button></div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div><div><span><span><span>14</span></span></span></div></div></button></div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div><div><span><span><span>74</span></span></span></div></div></button></div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div><div><span><span><span>96</span></span></span></div></div></button></div><div><div><button type="button"><div><div><div></div><svg><g><path></path></g></svg></div></div></button></div></div></div></div><div><div><div><button type="button"><span>Relevant</span><svg><g><path></path></g></svg></button></div></div><div><a href="/zodchiii/status/2048683276194185640/quotes"><span>View quotes</span><svg><g><path></path></g></svg></a></div></div></div></div></div></div>
