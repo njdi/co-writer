@@ -1,0 +1,49 @@
+{
+  "url": "https://x.com/Zephyr_hg/status/2048683276194185640",
+  "sequence": [
+    {
+      "type": "text",
+      "content": "darkzodchi\n@zodchiii"
+    },
+    {
+      "type": "image",
+      "file": "cover.jpg"
+    },
+    {
+      "type": "text",
+      "content": "The CLAUDE.md File That 10x'd My Output (Full File Included)\n8\n14\n74\n4.2K\nEvery Claude Code session starts by reading one file: CLAUDE.md. Before your first prompt, before any code, before anything happens, Claude reads this file and treats it as ground truth for the entire session.\nMost people either don't have one, or theirs is 300 lines of personality instructions.\nThe difference between a good CLAUDE.md and a bad one is the difference between onboarding a senior engineer with a clear brief and throwing a new hire into a codebase with no documentation.\nHere's how to write one that actually works👇\nBefore we dive in, I share daily notes on AI & vibe coding in my Telegram channel: https://t.me/zodchixquant🧠"
+    },
+    {
+      "type": "image",
+      "file": "img-01.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Why most CLAUDE.md files don't work\nThree reasons:\nToo long. Models can reliably follow about 150-200 instructions. Claude Code's system prompt already contains roughly 50. That means your CLAUDE.md gets maybe 100-150 instructions before Claude starts dropping things. If your file is 200+ lines, Claude isn't ignoring your rules on purpose.\nWrong content. Most people fill CLAUDE.md with things Claude can figure out on its own. Personality instructions like \"be a senior engineer\" or \"think step by step.\" General advice that doesn't change Claude's behavior. Every line that doesn't prevent a specific mistake is a wasted instruction.\nNo hierarchy. CLAUDE.md isn't the only place to put instructions. There are three levels and most people dump everything into one:\n~/.claude/CLAUDE.md       → Global (every project)\n.claude/CLAUDE.md         → Project (shared with team, in git)  \n./CLAUDE.local.md         → Local (personal overrides, gitignored)\nGlobal is for rules you'd repeat in every project. Project is for stack-specific context your team needs. Local is for your personal quirks. \nUsing all three keeps each file short and focused."
+    },
+    {
+      "type": "image",
+      "file": "img-02.jpg"
+    },
+    {
+      "type": "text",
+      "content": "The 5 sections that actually matter\nAfter going through dozens of production CLAUDE.md files from open-source projects, Anthropic's own docs, and community best practices repos, every effective file covers these 5 things:\n1. Critical commands\nClaude doesn't know how to build, test, or lint your project = tell it.\n## Commands\n- Build: `npm run build`\n- Dev: `npm run dev`  \n- Test single file: `npm test -- path/to/file`\n- Lint + fix: `npm run lint:fix`\n- Type check: `npx tsc --noEmit`\nShort and specific. Claude runs these instead of guessing. Without this section, Claude will try npm test when your project uses pnpm vitest and waste 3 turns debugging a command that was never going to work.\n2. Architecture map\nClaude starts every session with zero knowledge of your codebase. Give it a map.\n## Architecture  \n- src/lib/services/ → all business logic\n- src/components/ → stateless UI components only\n- src/lib/store/ → global state (Zustand)\n- src/app/api/ → API routes, no business logic here\n- Database access only through Server Actions or API routes\nNot a full directory listing. Just enough so Claude knows where things live and what goes where. \n3. Hard rules (the things Claude gets wrong without you)\nThis is the most important section. Every rule here should answer: \"Would removing this line cause Claude to make a mistake?\"\n## Rules\n- NEVER commit .env files or secrets\n- All async calls must use try/catch\n- Use functional components only, no class components\n- Prefix commits: feat:, fix:, docs:, refactor:\n- All PRs must pass `npm run verify` before merge\n- Static export only, no SSR (deployed to S3)\n- IMPORTANT: run type check after every code change\nTwo things to notice: \n1. negative rules are as important as positive ones (\"never commit .env\")\n2. emphasis markers like IMPORTANT actually work.\nAnthropic's own docs confirm that adding \"IMPORTANT\" or \"YOU MUST\" improves adherence.\nKeep this section under 15 rules.\n4. Workflow preferences\nHow do you want Claude to work? This prevents the \"Claude rewrites your entire file when you asked for a one-line fix\" problem.\n## Workflow\n- Ask clarifying questions before starting complex tasks\n- Make minimal changes, don't refactor unrelated code\n- Run tests after every change, fix failures before moving on\n- Create separate commits per logical change, not one giant commit\n- When unsure between two approaches, explain both and let me choose\n5. What NOT to include\nEqually important is what you leave out:\n## Don't include:\n- Personality instructions (\"be a senior engineer\")\n- Code formatting rules your linter already handles  \n- @-imports that embed entire docs into every session\n- Duplicate rules (if global says \"run tests,\" project doesn't repeat it)\n- Anything Claude will learn on its own via auto memory\nAuto memory is underrated here. Claude maintains its own notes at ~/.claude/projects/<project>/memory/. Run /memory to see what Claude has already learned about your project. \nDon't waste CLAUDE.md lines on things Claude figured out after one session."
+    },
+    {
+      "type": "image",
+      "file": "img-03.jpg"
+    },
+    {
+      "type": "text",
+      "content": "The full template (copy this)\nHere's a production-ready CLAUDE.md you can copy and adapt. Under 60 lines. Covers everything Claude needs, nothing it doesn't.\n# CLAUDE.md\n\n## Project\n[One line: what this project does and who uses it]\n\n## Stack  \n[Framework, language, database, deployment target]\n\n## Commands\n- Dev: `[command]`\n- Build: `[command]`\n- Test single: `[command] -- [path]`\n- Test all: `[command]`\n- Lint: `[command]`\n- Type check: `[command]`\n\n## Architecture\n- [folder] → [what lives here]\n- [folder] → [what lives here]\n- [folder] → [what lives here]\n- [file] → [what this file does]\n\n## Rules\n- [Rule that prevents a specific mistake]\n- [Rule that prevents a specific mistake]\n- [Rule that prevents a specific mistake]\n- IMPORTANT: [The one rule Claude keeps breaking]\n\n## Workflow\n- [How you want Claude to approach tasks]\n- [Commit conventions]\n- [Testing expectations]\n- [When to ask vs when to act]\n\n## Out of scope\n- [Things Claude should not touch]\n- [Files that are manually maintained]\n- [Integrations Claude shouldn't modify]\n\nDelete sections that don't apply. \nThe rules that change everything\nAfter testing dozens of CLAUDE.md configurations, these are the lines that made the biggest difference in output quality:\n# The lines with highest impact:\n\n- IMPORTANT: run type check after every code change\n  (prevents Claude from shipping broken types)\n\n- Make minimal changes, don't refactor unrelated code  \n  (prevents Claude from rewriting your entire file)\n\n- Create separate commits per logical change\n  (prevents the 47-file monster commit)\n\n- When unsure, explain both approaches and let me choose\n  (prevents Claude from making architectural decisions for you)\n\n- Static export only, no SSR\n  (prevents Claude from adding server-side code to a static site)\n\nEach of these prevents a specific, common mistake. \nThat's the test for every line in your CLAUDE.md: does removing it cause Claude to do the wrong thing?\nThe mistake everyone makes\nPeople treat CLAUDE.md like a wish list.\nYour CLAUDE.md should be a technical brief, not a motivational speech. Stack, commands, architecture, rules, workflow. Everything else is noise competing for attention with the instructions that actually matter.\nKeep it under 80 lines. Review it when Claude gets something wrong. \nThe file compounds over time. A good CLAUDE.md in month one saves you from repeating yourself. \nBy month six it's captured every mistake Claude has ever made in your project and prevents all of them automatically.\nI share daily notes on AI, finance, and vibe coding in my Telegram channel: https://t.me/zodchixquant"
+    },
+    {
+      "type": "image",
+      "file": "img-04.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Want to publish your own Article?\nUpgrade to Premium\n4:38 PM · Apr 27, 2026\n·\n4,233\n Views\n8\n14\n74\n96\nRelevant\nView quotes"
+    }
+  ]
+}
