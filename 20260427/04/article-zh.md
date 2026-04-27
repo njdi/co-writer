@@ -1,4 +1,4 @@
-# AI 随想
+# 关于 AI，我说几句实话
 
 **作者：** Karri Saarinen ([@karrisaarinen](https://x.com/karrisaarinen))  
 **日期：** 2026年4月26日  
