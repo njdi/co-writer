@@ -1,0 +1,8 @@
+step1-requirements.png KGgcbXYMgo1PCpxB5s1ck7Ppnde
+step2-delete.png Ztq2brSsHo5pbExRn9Pc9v9dnsd
+step3-simplify.png TI7LbQzovoLLDSx9s4hcEmCfnQb
+step4-iterate.png Zz6gbsuQpoE2uBx6RmLcCYafnhc
+step5-automate.png VOe6bseFmoV8H5x9vIzct3DknAb
+example1-mats.png KM9QbUwk4oB965xaXcGcE0UbnAb
+example2-testing.png F440bdbaPohUQix53qFcTSY5nXg
+example3-vacuum.png SNOvbDathosUaJx29w9cdl2dnkg
