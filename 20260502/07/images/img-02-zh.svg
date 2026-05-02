@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1386" height="976" viewBox="0 0 1386 976">
+  <defs>
+    <style>
+      .bg{fill:#11111a}.panel{fill:#171721;stroke:#292a3a;stroke-width:2}.txt{font-family:"PingFang SC","Microsoft YaHei",Arial,sans-serif;font-weight:700}.mono{font-family:"SFMono-Regular","Consolas",monospace}.title{font-size:23px;letter-spacing:8px;fill:#62635f}.time{font-size:25px;fill:#9b8cff}.time2{font-size:25px;fill:#f4ae54}.time3{font-size:25px;fill:#76d8bc}.head{font-size:29px;fill:#ece9df}.body{font-size:23px;fill:#6b6c63;letter-spacing:2px}.line{stroke:#323347;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1386" height="976" class="bg"/>
+  <rect x="14" y="13" width="1358" height="950" rx="24" class="panel"/>
+  <text x="56" y="64" class="txt mono title">我的夜间工作流</text>
+  <line x1="86" y1="152" x2="86" y2="894" class="line"/>
+
+  <circle cx="87" cy="152" r="10" fill="#171721" stroke="#8e80ff" stroke-width="5"/>
+  <text x="128" y="159" class="txt mono time">11:30 PM</text>
+  <text x="128" y="214" class="txt head">在 claude-squad 中启动 3 个 agent</text>
+  <text x="128" y="257" class="txt mono body">agent 1：修复所有打开的 “bug” issue</text>
+  <text x="128" y="296" class="txt mono body">agent 2：为 /services/ 补写缺失测试</text>
+  <text x="128" y="335" class="txt mono body">agent 3：重构 dashboard 组件</text>
+
+  <circle cx="87" cy="415" r="10" fill="#171721" stroke="#8e80ff" stroke-width="5"/>
+  <text x="128" y="422" class="txt mono time">11:32 PM</text>
+  <text x="128" y="477" class="txt head">开启自动接受，合上电脑</text>
+  <text x="128" y="520" class="txt mono body">可信任务用 cs -y，有风险的用计划模式</text>
+
+  <circle cx="87" cy="601" r="10" fill="#171721" stroke="#f4ae54" stroke-width="5"/>
+  <text x="128" y="608" class="txt mono time2">3:00 AM</text>
+  <text x="128" y="663" class="txt head">agents 自主工作中</text>
+  <text x="128" y="706" class="txt mono body">写代码、跑测试、根据失败持续迭代</text>
+
+  <circle cx="87" cy="788" r="10" fill="#171721" stroke="#76d8bc" stroke-width="5"/>
+  <text x="128" y="795" class="txt mono time3">8:00 AM</text>
+  <text x="128" y="850" class="txt head">3 个 PR 等待 review</text>
+  <text x="128" y="893" class="txt mono body">独立分支、没有冲突、测试通过</text>
+</svg>

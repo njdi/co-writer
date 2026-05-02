@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1382" height="634" viewBox="0 0 1382 634">
+  <defs>
+    <style>
+      .bg{fill:#11111a}.panel{fill:#171721;stroke:#34305c;stroke-width:2}.txt{font-family:"PingFang SC","Microsoft YaHei",Arial,sans-serif;font-weight:700}.title{font-size:31px;fill:#b8a8ff}.body{font-size:27px;fill:#c7c3bd}.num{font-size:26px;fill:#c3b5ff}.code{font-family:"SFMono-Regular","Consolas",monospace;font-size:24px;font-weight:700;fill:#8ee2c1}.chip{fill:#11121a}
+    </style>
+  </defs>
+  <rect width="1382" height="634" class="bg"/>
+  <rect x="13" y="15" width="1356" height="604" rx="24" class="panel"/>
+  <text x="62" y="112" class="txt title">从哪里开始 —— 一个下午搭好</text>
+
+  <rect x="62" y="162" width="55" height="56" rx="14" fill="#302b5a"/>
+  <text x="83" y="198" class="txt num">1</text>
+  <text x="146" y="201" class="txt body">写一份合格的 CLAUDE.md —— 30 分钟，每次会话立刻受益</text>
+
+  <rect x="62" y="250" width="55" height="56" rx="14" fill="#302b5a"/>
+  <text x="82" y="286" class="txt num">2</text>
+  <text x="146" y="289" class="txt body">安装 superpowers ——</text>
+  <rect x="436" y="258" width="764" height="42" rx="6" class="chip"/>
+  <text x="456" y="286" class="txt code">/plugin install superpowers@claude-plugins-official</text>
+
+  <rect x="62" y="338" width="55" height="56" rx="14" fill="#302b5a"/>
+  <text x="82" y="374" class="txt num">3</text>
+  <text x="146" y="377" class="txt body">安装 claude-squad ——</text>
+  <rect x="454" y="346" width="387" height="42" rx="6" class="chip"/>
+  <text x="472" y="374" class="txt code">brew install claude-squad</text>
+  <text x="862" y="377" class="txt body">—— 今晚就开始并行跑 agent</text>
+
+  <rect x="62" y="474" width="55" height="56" rx="14" fill="#302b5a"/>
+  <text x="82" y="510" class="txt num">4</text>
+  <text x="146" y="513" class="txt body">下周逐步补上记忆、subagents 和 hooks，边用边看哪里有缺口</text>
+</svg>

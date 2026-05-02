@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1390" height="656" viewBox="0 0 1390 656">
+  <defs>
+    <style>
+      .bg{fill:#14141f}.panel{fill:#171721;stroke:#292a3a;stroke-width:2}.muted{fill:#62635f;letter-spacing:8px}.txt{font-family:"PingFang SC","Microsoft YaHei",Arial,sans-serif;font-weight:700}.mono{font-family:"SFMono-Regular","Consolas",monospace;letter-spacing:6px}.small{font-size:25px}.title{font-size:24px}.label{font-size:25px}.arrow{fill:#3d403d;font-size:28px;font-weight:700}.dash{fill:#5a5b4d;font-size:22px;letter-spacing:10px}
+    </style>
+  </defs>
+  <rect width="1390" height="656" fill="#11111a"/>
+  <rect x="16" y="16" width="1358" height="624" rx="24" class="panel"/>
+  <text x="58" y="67" class="txt mono muted title">记忆如何在会话之间流动</text>
+
+  <rect x="66" y="137" width="200" height="84" rx="14" fill="#282842" stroke="#414176" stroke-width="2"/>
+  <text x="113" y="189" class="txt label" fill="#b0a6ff">会话 1</text>
+  <text x="282" y="189" class="txt arrow">→</text>
+  <rect x="317" y="137" width="214" height="84" rx="14" fill="#1f3432" stroke="#3a5b58" stroke-width="2"/>
+  <text x="347" y="189" class="txt label" fill="#68d7b5">claude-mem</text>
+  <text x="548" y="189" class="txt arrow">→</text>
+  <rect x="582" y="137" width="212" height="84" rx="14" fill="#3b2a25" stroke="#6b4f32" stroke-width="2"/>
+  <text x="612" y="189" class="txt label" fill="#ffad5e">Obsidian Wiki</text>
+
+  <text x="365" y="270" class="txt mono dash">—— 压缩 + 存储决策 ——</text>
+
+  <rect x="66" y="297" width="213" height="84" rx="14" fill="#3b2a25" stroke="#6b4f32" stroke-width="2"/>
+  <text x="96" y="349" class="txt label" fill="#ffad5e">Obsidian Wiki</text>
+  <text x="295" y="349" class="txt arrow">→</text>
+  <rect x="330" y="297" width="224" height="84" rx="14" fill="#1f3432" stroke="#3a5b58" stroke-width="2"/>
+  <text x="360" y="349" class="txt label" fill="#68d7b5">潜意识 agent</text>
+  <text x="570" y="349" class="txt arrow">→</text>
+  <rect x="605" y="297" width="200" height="84" rx="14" fill="#3a2030" stroke="#673348" stroke-width="2"/>
+  <text x="653" y="349" class="txt label" fill="#f29ac7">会话 2</text>
+
+  <text x="365" y="430" class="txt mono dash">—— 加载上下文 + 预热记忆 ——</text>
+
+  <rect x="496" y="475" width="400" height="84" rx="14" fill="#1f3432" stroke="#3a5b58" stroke-width="2"/>
+  <text x="537" y="527" class="txt label" fill="#86e5c4">每次会话都会更聪明</text>
+</svg>
