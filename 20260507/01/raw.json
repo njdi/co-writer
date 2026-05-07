@@ -1,0 +1,97 @@
+{
+  "url": "https://x.com/Zephyr_hg/status/2051980350239191077",
+  "sequence": [
+    {
+      "type": "text",
+      "content": "RetroChainer\n@RetroChainer"
+    },
+    {
+      "type": "image",
+      "file": "cover.jpg"
+    },
+    {
+      "type": "text",
+      "content": "I spent 3 weeks figuring out how to make AI influencers. Here's everything you need to know.\n25\n56\n209\n126K\nStep 1 - Choosing a Niche\nThe real secret is the niche. It determines everything:\nThe model's appearance and style\nContent format and triggers\nAudience engagement and account growth\nThe AI influencer market appeared literally a few months ago. The real potential of niches is still untapped copying successful girls makes no sense, you need to find your own direction.\nThree working directions:"
+    },
+    {
+      "type": "image",
+      "file": "img-01.jpg"
+    },
+    {
+      "type": "text",
+      "content": "1. SubculturesAnime, cosplay, female streamers, football club fangirls. Timeless trends with maximally engaged audiences.\nExamples: you can take a clip of a female CS2 streamer and replace her with your AI model. Or run an account of a cosplayer from the Marvel universe. A single post touching on a niche debate within a community can generate massive engagement just from one small detail.\n2. Travel and eventsYour model can be on the Cannes red carpet, in Tokyo, or at a concert right now, without leaving home. This type of content feels expensive to produce because the viewer intuitively senses the effort behind it.\n3. Physical featuresBirthmarks, scars, unique facial features as an additional trigger, but not as the foundation of the account. Unrealistic appearances caused a sensation a few months ago now it no longer surprises anyone."
+    },
+    {
+      "type": "image",
+      "file": "img-02.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Hypothesis: create a girl who is a fan of a football club and regularly mention one player as the best on the team. A wave of hate + a wave of support = bonus engagement and an algorithm boost.\nStep 2 - Creating the Face\nAI without references produces averaged-out looks technically attractive, but without character. You scroll through new AI accounts and every face looks copy-pasted. Here's why.\nTools:\nPinterest - searching for references\nNano Banana Pro (Higgsfield) - face merging"
+    },
+    {
+      "type": "image",
+      "file": "img-03.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Process:\n1. Find two photos of different girls with clearly visible faces\n2. Upload both + the prompt to Nano Banana Pro:\nIntegrate a face into an existing scene. Substitute the face in the reference image with the face from the donor image. The objective is a seamless merge: the new face must inherit the exact expression, pose, and lighting interaction from the reference, while its color attributes (hair and eyes) are adapted from the donor for a perfectly harmonious and natural result."
+    },
+    {
+      "type": "image",
+      "file": "img-04.jpg"
+    },
+    {
+      "type": "text",
+      "content": "3. Get the result. If needed add a distinguishing feature (birthmark, unusual eye color)\nHow to choose faces correctly\nThe main mistake is picking similar-looking faces. The neural network smooths out the differences and you end up with an averaged result again.\nPick contrasting faces and assign roles in advance:\nFirst face base: sets the vibe of the niche (sharp cheekbones, \"cold\" look)\nSecond face donor: softens, adds attractiveness (baby face, full lips)"
+    },
+    {
+      "type": "image",
+      "file": "img-05.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Face types by niche:\nCosplay, anime, game characters\nStrong face goth, alt girl"
+    },
+    {
+      "type": "image",
+      "file": "img-06.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Soft/romantic face fashion, luxury lifestyle"
+    },
+    {
+      "type": "image",
+      "file": "img-07.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Hypothesis: find photos of girls of different ethnicities in the anime girl niche, merge them and add a birthmark as a distinguishing feature this instantly combines subculture and appearance triggers.\nStep 3 - Creating the Video\nThe core of the method: AI replicates the movements of a person from the reference video and fully replaces the model in the footage.\n3.1 Finding a Reference\nSearch on TikTok and Instagram. Use your niche as the search query goth girl, anime girl, cosplay.\nSigns of a good reference:\nHigh view count\nCharismatic, expressive facial movements\nRomantic undertone\nTriggers from your niche\nKey rule: the closer the person in the reference looks to your model — the more realistic the result. Kling struggles to transfer the movements of a long-haired girl onto a short-haired model.\n3.2 Creating the First Frame\nYou can't just insert a photo of your model and hit \"generate.\" Kling uses the background and pose from the uploaded photo, not from the reference. So first, you need to create a starting frame.\nUpload to Nano Banana Pro:\n 1. A photo of your AI model"
+    },
+    {
+      "type": "image",
+      "file": "img-08.jpg"
+    },
+    {
+      "type": "text",
+      "content": "2. A screenshot of the first frame of the reference video"
+    },
+    {
+      "type": "image",
+      "file": "img-09.jpg"
+    },
+    {
+      "type": "text",
+      "content": "3. Prompt:\nTake the girl's face and body from the first image, and the pose, emotion, and background from the second. Use the girl's face from the first image as the character's face and replace it in the second image, it is necessary to accurately convey emotion and playfulness, it is necessary to accurately convey the appearance of the girl from the first image without changing her appearance, the photo must be alive, the girl is not a doll, sincere real, photo taken on an iPhone phone camera."
+    },
+    {
+      "type": "image",
+      "file": "img-10.jpg"
+    },
+    {
+      "type": "text",
+      "content": "3.3 Generating in Kling\nUpload to Kling Motion Control: the first frame + the reference video. In the advanced settings, paste the prompt:\n\nUse the attached reference video as the sole motion blueprint and transfer its movement onto the character from the attached photo(s), preserving the character's exact identity, body proportions, face and hair features, skin texture, clothing fit, and overall silhouette with zero morphing, zero style drift, and no added accessories; match the reference motion precisely frame-by-frame including timing, speed, acceleration/deceleration, weight shifts, center-of-mass trajectory, foot placement, heel-to-toe roll, balance corrections, hand paths, finger articulation, head turns, eye-line direction, micro-expressions, breathing rhythm, and any subtle pauses, ensuring strict real-world biomechanics and believable inertia, muscle tension, and joint limits without exaggeration or \"animation-like\" elasticity; keep the action grounded in realistic physics with consistent gravity, natural momentum, correct contact forces, and clean interaction with the ground and body (no foot sliding, no limb stretching, no jitter, no teleporting, no sudden snaps), and do not invent any new gestures, effects, camera tricks, slow motion, extra movement, or transitions beyond what exists in the reference video; maintain stable, artifact-free rendering throughout with crisp continuity and no blur, warping, flicker, double-imaging, or AI glitches while the character performs the exact same motion sequence from start to finish.\nThis prompt solves Kling's main problems appearance drift and artifacts. It locks in the biomechanics of movement and prevents the model from improvising.\n3.4 Post-processing in CapCut\nThe raw render from Kling immediately reads as AI. The goal is to remove the plastic feel and make the video look like it was shot on a smartphone.\nImportant step before editing: send the video from your PC to your phone via Telegram or AirDrop. Neural networks leave metadata in the file marking it as AI-generated. This transfer clears it the platform treats the video as regular user content.\nSettings in CapCut:\nParameter Value Why     \nGrain 40 Removes the plastic AI look   \nSharpness 20 Brings out facial and clothing detail   \nBrightness –5 to –10 Adds depth, removes the \"plastic\" feel   \nVignette 10–15 Adds a cinematic quality\nAll values are guidelines, not strict rules. If the scene is dark don't touch brightness. If contrast is high reduce grain slightly. The key variables are grain + reduced brightness.\nHypothesis: shoot one video in two versions with post-processing and without. Post them a few days apart. The difference in reach will show the real impact of post-processing on the algorithm.\nThe Full Funnel\nNiche → Face (Nano Banana Pro) → First Frame (Nano Banana Pro) → Generation (Kling Motion Control) → Post-processing (Telegram → CapCut)\nThe next step is building your own workflow. Kling is simple but not the most powerful tool. A proper workflow delivers noticeably higher quality we'll cover that separately.\nMore about AI influencers, workflows and monetization in my Telegram:  https://t.me/+Qc2hxi7IClViMDRi\nWant to publish your own Article?\nUpgrade to Premium\n7:00 PM · May 6, 2026\n·\n126.1K\n Views\n25\n56\n209\n534\nRelevant\nView quotes"
+    }
+  ]
+}
