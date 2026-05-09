@@ -1,0 +1,57 @@
+# How to Use Claude to Write YouTube Scripts That Actually Sound Like You
+
+**Author:** Bryan Ng ([@boomerrbryan](https://x.com/boomerrbryan))  
+**Published:** May 8, 2026  
+**Source:** [How to Use Claude to Write YouTube Scripts That Actually Sound Like You](https://x.com/Zephyr_hg/status/2052718260097876413)
+
+Most people use AI to write scripts and immediately hate the result. It doesn't sound like them. It's stiff. It's generic. It sounds like a chatbot trying to fake being human.
+
+The problem isn't AI. The problem is you're not giving it enough to work with.
+
+There are two specific ways to use Claude that completely change the output quality. One fixes the voice problem. The other fixes the editing problem. Together, they turn Claude into a writing partner that actually makes your scripts better — not just faster.
+
+## Train Claude on Your Brand Voice First
+
+Before you write a single word, you need to teach Claude how you talk.
+
+The way to do this is surprisingly simple. Go to your YouTube channel, pull the transcripts from two or three of your existing videos, and paste them into Claude. If you don't have videos yet, use newsletters, PDFs, or any writing that sounds like you.
+
+Then ask Claude to do one specific thing: extract a JSON profile of your brand voice.
+
+A JSON profile is just a structured data document. You're asking Claude to analyze your writing and capture it — your tone, your sentence length, your signature phrases, your storytelling style, your credibility builders. All of it, in a format you can paste back into any future conversation.
+
+Here's what comes out: personality traits like "educational mentor" and "casual authority," specific transition phrases you use, sentence structures you gravitate toward. It's your writing fingerprint, captured in a document.
+
+Once you have that profile, paste it into any new Claude session and say "use this JSON profile to write me a script on [topic]." The result is dramatically different from a cold AI draft. Claude generated this example hook from a script about YouTube growth: "You spend weeks planning your video, you film for hours, you edit until your eyes bleed, you hit upload — 47 views, three likes, and the only comment is from your mom." That kind of hook doesn't come from a generic prompt. It comes from training.
+
+This approach works whether you're writing for your own channel or writing scripts for clients. Train Claude on the client's brand voice, extract the JSON profile, and you can produce scripts in their voice on demand.
+
+One important note: don't try to one-shot the script. Ask for hook variations first. Then body section variations. Let Claude iterate on pieces before you try to put the whole thing together.
+
+## Use Claude to Catch What You Miss When Editing
+
+The second use case is editing — and this one is underrated.
+
+When you've written a script, you're too close to it. You'll miss weak transitions, contradicting messages, repetitive content, and calls to action that don't land. These are exactly the kinds of problems Claude can spot.
+
+The key is giving Claude a framework to edit from. Don't just paste in your script and say "make this better." Upload your editing guidelines first. This could be a PDF, a set of slides, or even a transcript from a video where you explain your editing principles. Feed Claude the rules before you ask it to apply them.
+
+Then paste in your draft script, give Claude a role — "you're a YouTube scriptwriter with millions of views and a proficient copywriter" — and ask it to critique one specific section at a time. Not the whole script. One point, one section.
+
+The feedback is specific. Here's a real example: a script point about reframing your 9-to-5 job came back with critiques like "weak transition," "contradicting message," "overused example," "repetitive content," and "unclear structure." Claude then produced a rewrite that cut the fluff and sharpened the argument — something the writer had completely missed on their own pass.
+
+The rewrite wasn't perfect. But it was substantially better, and it took seconds.
+
+Here's the honest take on this: the base copy still needs to come from you. You can't fully outsource the thinking. What you can do is use Claude to hold up a mirror to your writing and show you what you're not seeing. The prompting itself — deciding what to feed Claude, how to structure the request, what section to focus on — that's the thinking you still need to do.
+
+## Your Next Step
+
+Start with the brand voice exercise. Pull two or three transcripts from your existing videos (or your best writing if you don't have videos yet) and paste them into Claude. Ask it to extract a JSON brand voice profile. Save that document.
+
+Then the next time you sit down to write a script, paste in that profile first and see what comes out.
+
+That one change — giving Claude your voice before asking it to write in your voice — is what separates AI-assisted scripts that actually sound like you from the generic output most people end up with.
+
+---
+
+Subscribr applies this same logic at scale: it trains on your channel data, studies what's worked for creators in your niche, and generates full scripts built around your style. Try it for 7 days: https://subscribr.link/ngmQaFC
