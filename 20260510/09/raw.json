@@ -1,0 +1,41 @@
+{
+  "url": "https://x.com/Zephyr_hg/status/2052925157606568217",
+  "sequence": [
+    {
+      "type": "text",
+      "content": "Kangwook Lee\n@Kangwook_Lee"
+    },
+    {
+      "type": "image",
+      "file": "cover.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Why We Should Stop Designing Harnesses for AI Agents\n23\n47\n407\n67K\n(For those who aren't familiar with \"the horse-carriage analogy\", please read my recent article first)\nIn this article, I want to explain why we all should stop hand-designing harnesses for AI agents. \ntldr; The best harness for an AI agent may no longer be the one humans design for it, but the one the agent engineers for itself. If we keep designing harnesses for AI agents, we will become the bottleneck.\nLet me explain why.\nA Harness Creates a Threshold\nLet me start with laying out a new way of thinking about the relationship between a harness and a model.\nThe view most people use today is \"fix the model, change the harness.\" \nThe view I want to propose is \"fix the harness, and vary model capacity.\" \nThen, for a fixed task, the harness creates a single threshold on the model's raw intelligence.\nIf the model is smarter than the threshold, it solves the task with this harness. If the model is below the threshold, it cannot.\nLet's call this threshold θ(h), defined with respect to harness h.\nThe diagram below captures this idea."
+    },
+    {
+      "type": "image",
+      "file": "img-01.jpg"
+    },
+    {
+      "type": "text",
+      "content": "The Three Regimes Framework\nThis view becomes very useful when it comes to comparing two harnesses. \nOne is a good harness (h_good). One is a bad harness (h_bad).\nThe good harness makes the task easier, so it creates a lower threshold.\nThe bad harness demands a smarter model for the same task, so it creates a higher threshold.\nThis naturally gives rise to three regimes."
+    },
+    {
+      "type": "image",
+      "file": "img-02.jpg"
+    },
+    {
+      "type": "text",
+      "content": "First regime. Models in this regime cannot solve the task with either harness. \nSecond regime. Models in this regime are moderately smart, and they can solve the task but only with a good harness!\nThird regime. Models in this regime are smart enough, and they can solve the task regardless of the harness.\nNote that harness quality matters in the middle regime when models are moderately smart but not very smart. That's when a good harness makes a difference.\nLet's call this The Three Regimes Framework.\n\n\nHuman-made harness vs AI-made harness\nLet's return to the horse-carriage analogy.\nThere is one crucial difference between a horse and an AI.\nA horse could not build its own harness. AI can.\nNow, consider the two kinds of harnesses.\nh_human: harnesses made by humans.\nh_ai: harnesses made by AI.\nFor the past several years, the situation was this.\nh_good = h_human\nh_bad = h_ai\nHuman-made harnesses were better than AI-made ones.\nSo in the Three Regimes Framework, the middle regime meant: \"AI model works only with human-made harness.\"\nThe agent loops, tool-use patterns, memory structures, planning scaffolds that we carefully engineered by hand outperformed what AI produced on its own. Building a good agent meant building a good harness.\nPersonally, I spent a lot of time in this era designing harnesses for AI agents. I've designed the state-of-the-art chatbot harness [ACL'23], the VLM-based image clustering agent [ICLR'24], a gaming companion agent for PUBG [blog] Ally, and Terminus-KIRA [blog] for coding agents. \nIt was very fun. For a while.\n\n\nBut the Premise is Changing\nAI is getting better at coding.\nBetter at debugging.\nFaster at iterating on systems.\nAnd eventually, better at building harnesses than we are.\nThis flips the situation.\nh_good = h_ai\nh_bad = h_human\nWhat does this mean? As per the Three Regimes Framework, the middle regime meant: \"AI model works only with AI-made harness.\"\nIn other words, if we keep using \"human-made harness\", we won't be able to see the full potential of the models whose capability lies in the middle regime.\nIn fact, our recent work, Meta Harness (led by @yoonholeee), already showed that AI outperforms humans at iterative harness engineering for mid-sized models.\n\n\nTo see the full picture, let me add a time axis. \nAssume AI coding ability increases monotonically over time. You get the following 2D phase diagram and see we are at the cusp of an important phase transition."
+    },
+    {
+      "type": "image",
+      "file": "img-03.jpg"
+    },
+    {
+      "type": "text",
+      "content": "The emergence of the \"yellow regime\" gives another possible explanation for the mismanaged geniuses hypothesis by @a1zhang @lateinteraction. If we keep using hand-designed harnesses, we won't see the full potential of the underlying AI models.\n\n\nConclusions\nWhen a model is overwhelmingly strong, harness quality barely matters. A simple agent loop and the right tools are enough to handle almost anything.\nWhen a model is too weak, harness quality also barely matters. No harness can save it.\nThe problem is the middle. When a model is modestly smart. Capable in principle, but failing without proper support. That is where harness quality is decisive.\nAnd until recently, that good harness had to come from a human.\nNot anymore. To fully leverage models in the middle regime, we need to step back from harness engineering.\nLet the smart horses build their own harness.\nWant to publish your own Article?\nUpgrade to Premium\n9:34 AM · May 9, 2026\n·\n67.9K\n Views\n23\n47\n407\n876\nRelevant\nView quotes"
+    }
+  ]
+}
