@@ -1,0 +1,33 @@
+{
+  "url": "https://x.com/Zephyr_hg/status/2053953371762286954",
+  "sequence": [
+    {
+      "type": "text",
+      "content": "Zara Zhang\n@zarazhangrui"
+    },
+    {
+      "type": "image",
+      "file": "cover.jpg"
+    },
+    {
+      "type": "text",
+      "content": "How to make stunning HTML slides (for complete beginners)\n2\n7\n59\n3.8K\nDon't make PowerPoint decks. Make HTML slides that look like these:\n1:32\nIf you want to adopt a more AI-native way of working but don't know where to start, the easiest and highest-leverage thing you can do is probably starting to replace all your PPT decks with HTML slides.\nHTML slides are taking over the world because:\nAI is very good at generating beautiful HTML, especially arranging text and images into boxed layouts (since their training data contains lots of websites)\nHumans are visual animals. We simply like beautiful things. The most important thing your slides need to do is to capture someone's attention\nIt is FAST. If you have a presentation in half an hour and need a quick deck, you simply don't have time to push boxes around in PowerPoint. Just send the content to AI and it will magically arrange all the content in beautiful layouts in A COUPLE MINUTES\nUsers have told me that they got extremely positive feedback from audiences because they usually have never seen anything like this, and admire how AI-native the presenter is\nHere's a practical guide for complete beginners, without assuming prior knowledge in coding, using an agent, or knowing about GitHub or skills:\nGo to AnyGen (You can get started for free and get free credits)\nSelect \"Build slides\" -> \"Frontend\", then choose a template you like\nGIF\n 3. Type your instruction for creating the slides in the prompt box\n4. Iterate and edit. All HTML decks are editable in AnyGen! Just click on any text to edit, or click on \"Boss mode\" to give targeted edits in batch: just comment on elements to tell AI what to change\nGIF\nIf you wanna insert your own images, just send them to AI and tell it where to insert\n\n5. All HTML decks are sharable as links, so you can just send it to others (without having to learn how to deploy a website)"
+    },
+    {
+      "type": "image",
+      "file": "img-01.jpg"
+    },
+    {
+      "type": "text",
+      "content": "6. All HTML decks can be exported as PDF or PPT files"
+    },
+    {
+      "type": "image",
+      "file": "img-02.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Your next slide deck doesn't need to be a PowerPoint. HTML is the future, and the easiest way to get started making HTML is to creating slides.\nGet started here \nWant to publish your own Article?\nUpgrade to Premium\n5:40 AM · May 12, 2026\n·\n3,851\n Views\n2\n7\n59\n93\nRelevant"
+    }
+  ]
+}
