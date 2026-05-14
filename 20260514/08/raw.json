@@ -1,0 +1,41 @@
+{
+  "url": "https://x.com/Zephyr_hg/status/2054646394867364143",
+  "sequence": [
+    {
+      "type": "text",
+      "content": "Chamath Palihapitiya\n@chamath\nSubscribe"
+    },
+    {
+      "type": "image",
+      "file": "cover.jpg"
+    },
+    {
+      "type": "text",
+      "content": "A Primer On The Agentic AI Economy\n42\n93\n893\n129K\nOn a Friday evening in November 2025, Peter Steinberger built the first version of OpenClaw.\nThe prototype only took about an hour, yet within weeks, OpenClaw surpassed 145,000 GitHub stars, making it the fastest-growing open-source software project in GitHub history.\nThe platform was largely built by AI agents, and it marked a shift from chatbots to autonomous, task-oriented AI.\nAnd this shift is accelerating. AI now generates 75% of Google’s new code and up to 30% of Microsoft’s new code. Daily Claude Code commits on GitHub surpassed 134,000 in early 2026, up from near zero at its March 2025 launch.\nThis is a structural change in how software, and increasingly how knowledge work, gets done.\nAI agents are building the frontier of that change.\nSo what is an AI agent, exactly, and how is it different from a chatbot or an LLM? What makes this structural rather than a passing phase? And as the stack matures, where does value accrue, and where does it commoditize?\nThese are the questions we set out to answer.\nThe result is a five-layer framework for what an agent actually is, where the technology is going, and who is positioned to win at each layer."
+    },
+    {
+      "type": "image",
+      "file": "img-01.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Some of the answers are already visible in the numbers. Anthropic went from $1B to $44B in annualized revenue in seventeen months, almost entirely on coding agents. At the same time, open-source agent harnesses are now processing tens of trillions of tokens per month. Both numbers seem to point to the same place: the harness layer.\nBut agents still routinely make obvious mistakes. In December 2025, an Amazon coding agent autonomously deleted and recreated a live production environment, taking AWS in China offline for 13 hours. In April 2026, a Cursor agent powered by Claude deleted an entire company database in 9 seconds.\nFour failure modes show up repeatedly in production, and most never appear on a vendor pricing sheet.\nMcKinsey’s 2025 State of AI survey found that fewer than 10% of organizations have agents deployed at a meaningful scale. Most are not using them at all."
+    },
+    {
+      "type": "image",
+      "file": "img-02.jpg"
+    },
+    {
+      "type": "text",
+      "content": "The gap between what is technically possible and what is operationally deployed is the opportunity.\nThe 84-page primer on our Substack is our effort to hopefully provide a map. Here is what you will find inside:\nThe five layers of an agent, and how they fit together\nSix case studies of how early adopters are deploying agents today, including my company, 8090\nThe four ways agents reliably break in production\nThe layer we expect to accrue the most durable value as models commoditize\nWho is positioned to control each of the five layers"
+    },
+    {
+      "type": "image",
+      "file": "img-03.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Subscribe to read and let me know what you think in the group: https://chamath.substack.com/p/ai-agents-primer\n\n\nWant to publish your own Article?\nUpgrade to Premium\n3:34 AM · May 14, 2026\n·\n129K\n Views\n42\n93\n893\n1.9K\nRelevant\nView quotes"
+    }
+  ]
+}
