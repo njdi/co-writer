@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="180" viewBox="0 0 1760 180">
+  <rect width="1760" height="180" fill="#ffffff"/>
+  <style>
+    text{font-family:"Kaiti SC","STKaiti","PingFang SC","Hiragino Sans GB",sans-serif;letter-spacing:0}
+    .main{font-size:31px;font-weight:750}
+    .plus{font-size:48px;font-weight:800}
+  </style>
+  <rect x="20" y="20" width="375" height="140" rx="28" fill="#aee0ff" stroke="#2d92d7" stroke-width="5"/>
+  <text x="208" y="77" class="main" fill="#2d78c7" text-anchor="middle">
+    <tspan x="208" dy="0">具体</tspan>
+    <tspan x="208" dy="40">（你真的看过）</tspan>
+  </text>
+
+  <text x="426" y="109" class="plus" fill="#8b4be2" text-anchor="middle">+</text>
+
+  <rect x="460" y="20" width="375" height="140" rx="28" fill="#fff3bf" stroke="#f0a000" stroke-width="5"/>
+  <text x="648" y="77" class="main" fill="#e79b00" text-anchor="middle">
+    <tspan x="648" dy="0">证明</tspan>
+    <tspan x="648" dy="40">（做出来，别只说）</tspan>
+  </text>
+
+  <text x="866" y="109" class="plus" fill="#8b4be2" text-anchor="middle">+</text>
+
+  <rect x="900" y="20" width="375" height="140" rx="28" fill="#bdf3ca" stroke="#27b765" stroke-width="5"/>
+  <text x="1088" y="77" class="main" fill="#20a85a" text-anchor="middle">
+    <tspan x="1088" dy="0">慷慨</tspan>
+    <tspan x="1088" dy="40">（先给出去）</tspan>
+  </text>
+
+  <text x="1315" y="109" class="plus" fill="#8b4be2" text-anchor="middle">=</text>
+
+  <rect x="1340" y="20" width="395" height="140" rx="28" fill="#d5c0ff" stroke="#8b4be2" stroke-width="5"/>
+  <text x="1538" y="102" class="main" fill="#7650d7" text-anchor="middle">嘈杂中的清晰信号</text>
+</svg>

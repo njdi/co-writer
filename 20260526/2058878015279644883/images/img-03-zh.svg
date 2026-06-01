@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1755" height="443" viewBox="0 0 1755 443">
+  <rect width="1755" height="443" fill="#ffffff"/>
+  <style>
+    text{font-family:"Kaiti SC","STKaiti","PingFang SC","Hiragino Sans GB",sans-serif;fill:#111;letter-spacing:0}
+    .title{font-size:43px;font-weight:700}
+    .h{font-size:38px;font-weight:800}
+    .body{font-size:28px;font-weight:650}
+  </style>
+  <text x="878" y="60" class="title" text-anchor="middle">两种侧门</text>
+
+  <rect x="20" y="92" width="810" height="330" rx="46" fill="#fff3bf" stroke="#f0a000" stroke-width="5"/>
+  <text x="92" y="164" class="h" fill="#9a4f00">主动出击</text>
+  <text x="92" y="210" class="body">
+    <tspan x="92" dy="0">你去找世界。</tspan>
+    <tspan x="92" dy="38">- 给创始人写一封冷邮件</tspan>
+    <tspan x="92" dy="38">- 发一份产品拆解或备忘录</tspan>
+    <tspan x="92" dy="38">- 提供一个原型或分析</tspan>
+    <tspan x="92" dy="38">- 询问真实存在的问题</tspan>
+    <tspan x="92" dy="38">- 让你的兴趣变得可见</tspan>
+  </text>
+
+  <rect x="865" y="98" width="870" height="318" rx="46" fill="#d8c5ff" stroke="#8b4be2" stroke-width="5"/>
+  <text x="1310" y="164" class="h" fill="#5d2aac" text-anchor="middle">被人找上门</text>
+  <text x="1145" y="210" class="body">
+    <tspan x="1145" dy="0">世界找到你。</tspan>
+    <tspan x="1145" dy="38">- 公开写作，公开构建</tspan>
+    <tspan x="1145" dy="38">- 发布文章、分析和作品</tspan>
+    <tspan x="1145" dy="38">- 创造可公开传播的成果</tspan>
+    <tspan x="1145" dy="38">- 让你的思考能被搜索到</tspan>
+    <tspan x="1145" dy="38">- 留下你真正活跃的证据</tspan>
+  </text>
+</svg>

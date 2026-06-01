@@ -1,0 +1,141 @@
+# 你的 AI 用法落后了 5 年，自己却没察觉
+
+**作者：** darkzodchi ([@zodchiii](https://x.com/zodchiii))  
+**日期：** 2026年5月25日  
+**来源：** [The reason your AI workflow is 5 years behind and you don't know it](https://x.com/zodchiii/status/2058851297772679517)
+
+先说个你大概很熟悉的画面。
+
+你现在用的 AI，说到底就是聊天框里的一个家伙。你跟它聊得再热闹，第二天再打开，它早把昨天的事忘得一干二净。
+
+而下一波 AI 不是这样。它给你的是一整支团队：好几个智能体待在一个真正的聊天应用里，互相 @ 对方，把任务分来分去，还记得你跟它们说过的每一句话。
+
+可问题是，大多数人离这一步还远着呢。他们还在 6 个 ChatGPT 标签页之间复制粘贴，就为了把一件事做完。
+
+下面，我就把你本该有的那套配置，从头到尾讲给你听。
+
+（开始之前顺嘴提一句：我在自己的 Telegram 频道里每天都会写点 AI 和 vibe coding 的笔记，感兴趣可以来看看：https://t.me/zodchixquant 🧠）
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzljMDE0YmQ4OGZmMDc1MGZlYzA4MjIxY2UwYjNkNWFfYjJiZjg2YzRlNDg1Njg2Nzk3ODMxZTA4ODg1YjMyODlfSUQ6NzY0Mzk5OTg0ODc5ODI3Njc5M18xNzc5NzU3NDMwOjE3Nzk4NDM4MzBfVjM)
+
+## 你现在用 AI 的方式，其实挺别扭
+
+不信你回想一下，一个普通的周二，你到底是怎么靠 AI 干活的。
+
+想快速要个答案，你开 ChatGPT。要做长一点的推理，你又切到 Claude。聊着聊着上下文丢了，只好再退回 ChatGPT。这一来一回，你把输出复制出来，贴进文档，再贴回另一个聊天框，让它"接着刚才说"。
+
+一天忙下来，屏幕上开了 11 个标签页，你自己都想不起来，到底哪一个里才有你最满意的那一版。
+
+这哪是什么工作流。更要命的是，这些 AI 彼此之间根本不通气。
+
+你的研究 AI 没法把成果直接递给写作 AI；你的代码 AI 也不知道，规划 AI 昨天到底定了什么。说白了，每一次都是你自己在中间，手忙脚乱地把它们一个个拼起来。
+
+## 那下一步，会是什么样子
+
+事情是这样的：AI 真正的转变，并不在于模型又变大了多少，而在于这些模型到底住在哪儿。
+
+不是聊天框里那个无所不能的超级 AI，而是一支各有专长的小团队，就待在一个你和同事天天都泡着的工作空间里。每个成员都有自己的活儿，都记得你，会互相 @，也会把任务分派出去。
+
+这么一来，你就不用再当那个忙着拼接的人了——你成了带队的。
+
+眼下已经有几个产品在朝这个方向冲，其中跑得最靠前的一个，叫 @Bloome_im。
+
+## 之前的种种尝试，结果都不太好看
+
+这个问题，其实人们已经折腾两年了，可留下来的，大多是些让人头疼的故事。
+
+有人搭了张 30 个节点的 n8n 流程图，结果某个 API 一改，整张图就崩了。有人写了一堆 Python 脚本，到头来只有创始人自己看得懂。还有人用 Zapier 拉了一串流程，脆弱得不行——头一回被凌晨两点的误报吵醒之后，他就再也不碰了。
+
+你发现没有，每次都是同一个套路：这些智能体之间并不交流，只是被一个个触发；它们也谈不上协作，无非是按顺序挨个跑一遍。
+
+可真正的团队不是这么干活的。真正的团队，是在聊天里你一句我一句，把事情做出来的。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmMxMzgxNDQ2M2ZlZTM5MGZkNWIzZTIwYTNjMjU3Y2VfZGM2OGUxMzQ1MzVlMWEwNWRhNjY1NDRkMzJlM2Y1MWVfSUQ6NzY0Mzk5OTg1NjA1MDUyMzM0OV8xNzc5NzU3NDMwOjE3Nzk4NDM4MzBfVjM)
+
+## 那么，Bloome 到底是个什么东西
+
+第一眼看上去，它就像 Slack，用起来也像 Slack——私信、频道、搜索、群聊，该有的一样不少。
+
+唯一不一样的地方是：跟你说话的那些"人"，有一半压根不是人。
+
+它们是 AI 智能体。每一个都有自己的名字、头像、性格和专长。你 @ 它们的方式，跟 @ 一个同事完全一样。它们会实时回话，还记得你三个礼拜前提过的事。
+
+更有意思的是，当一个智能体自己搞不定，它会主动把别人拉进来。打个比方，一个设计智能体被问到 CTA 文案该怎么写，可它拿不准品牌的调性，于是顺手 @ 了品牌智能体。两个就在同一个话题串里你来我往，你只要在旁边看着它们把事情商量明白就行。
+
+这才是真正值钱的地方。不是给你"一个 AI 助手"，而是一群智能体待在同一处，彼此搭话、互相补位。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjI2N2ZlMTRiMzAzN2UyMmE5MDRhNzBjZDliNTExNWVfMzQyMTE0YTE2MjQ4NDgzYjY4MTk2OWVjYjZmY2E4MTBfSUQ6NzY0Mzk5OTg2MTQ3NDE2ODAxMl8xNzc5NzU3NDMwOjE3Nzk4NDM4MzBfVjM)
+
+## 真正让它不一样的，是这 4 个地方
+
+**第一，智能体是当团队来用的，不是一次性的聊天机器人。**
+
+你把一个任务丢进频道，好几个智能体就在同一个话题串里一起上手。一个去查资料，一个动手起草，一个负责核实，一个接着一个，在对方做好的基础上往下推进。而且交出来的是实打实的东西——草稿、分析、代码，不是嘴上说说而已。
+
+这才是"多智能体"落到实处的样子。顺带还省去了那 47 个等着你去调的 LangChain 节点。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDg5NWY2MzI3ZTExOWFjYjJhZDU3MTE5OWE3ODM5NmFfOGUxNDEwMjk5YjM0ZjE2YzQwOGU4NDI5YjUzMzZiMGVfSUQ6NzY0Mzk5OTg3MDM3ODMxNDk2N18xNzc5NzU3NDMwOjE3Nzk4NDM4MzBfVjM)
+
+**第二，智能体会站在不同立场上互相较劲。**
+
+举个例子，你把一只股票代码丢进一个群里，群里有交易、动量和风险三个智能体。交易智能体一眼盯上了突破，动量智能体转头去看 RSI，风险智能体却唱起反调，顺手就设了个止损。
+
+注意，这不是你逼着一个模型分饰三角，而是三个专家真刀真枪地争。好决策，往往就是这么吵出来的。
+
+**第三，有个"智能体网络"，任何一个智能体都能一键克隆。**
+
+用户可以把自己调好的智能体发布出去。比如 Ava 做的那个产品经理，已经被安装了 1.24 万次；Leo 做的金融分析师，也有 9800 次。你看中哪个好用，点一下"克隆"，再改成自己想要的样子，它就归你了。
+
+说白了，这就是 AI 智能体版的 Steam。而且眼下它还足够空旷，早进场的人，完全有机会占住一整个品类。
+
+**第四，它的记忆不会被清零。**
+
+ChatGPT 一关标签页就忘，Claude 一开新对话也忘。可 Bloome 的智能体不一样，它记得每一次对话、每一个偏好、每一处细节，你用得越久，它就越顺手、越懂你。
+
+这才是它真正的护城河——靠的不是模型本身，而是一点一点攒下来的那些上下文。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGM0MWVmODQzZWFkNDNhOWUxZDY4ZjFlZmRmZDViNmJfNTBhNmU1MDc0NDBkNWNlMDdmYjdhZDhiODk5NjQ1MGFfSUQ6NzY0Mzk5OTg4MDcwMTA4NjkyMl8xNzc5NzU3NDMwOjE3Nzk4NDM4MzBfVjM)
+
+## 上手其实就三步
+
+第一步，注册完，你马上就有了一个私人 AI 助手，代码、文档、数据，什么活儿都能接。
+
+第二步，在任何频道或话题串里 @ 它一下，它就像个队友似的实时回你。
+
+第三步，需要谁就把谁拉进来。它们之间会自己分派任务、共享上下文、并行开工。一个话题串，好几个智能体，全程都不用你盯着。
+
+就这样，搞定。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjU1MDU4ZjgxZWFhYjhkMDdmMDc5ODE1ZmRmOGIzOTdfZjYzNDgyYmQzMTQ3MzI2NGZiNDJmM2VlZjU2ZWJlMTlfSUQ6NzY0Mzk5OTg4NzQ0ODk2ODM4MV8xNzc5NzU3NDMxOjE3Nzk4NDM4MzFfVjM)
+
+## 那这东西，到底适合谁
+
+如果你是单打独斗的创始人，靠开 5 个 ChatGPT 标签页硬撑出一个"团队"的样子，那它能把这些全替掉。
+
+如果你是个小团队，眼下各用各的 AI，那它给你们腾出一块共享的地方，让智能体成为里头正经的一员。
+
+如果你本来就擅长写好的系统提示词，那这个智能体网络就是你的分发渠道：发布一次，慢慢攒安装量，一点点建起口碑。
+
+而哪怕你别的都不图，只想要一个到了周二还记得你是谁的 AI，那它最基础的那套，也已经比我用过的任何东西都强了。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTRjYWU4YzQ1ZTgwY2Q0NzEzMGRhMDcwMjhkMTI2Y2VfYzcwYmVmOGFmZjhlNjhlYzYxZDQxZGUwNTM0ZjdmNDhfSUQ6NzY0Mzk5OTg5NzY0NTAxMDEyMl8xNzc5NzU3NDMxOjE3Nzk4NDM4MzFfVjM)
+
+## 想进去的话
+
+有个门槛得先跟你说清楚：Bloome 现在还在封闭测试，名额有限。
+
+不过好消息是，你可以插个队——注册的时候填上邀请码 BLOOMENOW，就能进。
+
+## 最后说点实在的
+
+这事背后押的最大一个赌注，其实是这么个判断：AI 的未来，不会是"聊天框里那个超级聪明的模型"，而是一支各有专长的小团队，待在一个你和同事天天都泡着的工作空间里，实实在在地交出东西，而不是光在那儿说。
+
+这条路，做起来当然难得多。可话说回来，一旦真做成了，这道护城河也就深得多。
+
+到目前为止，Bloome 是我见过的第一个，能让智能体真像队友、而不像工具的产品。光凭这一点，就值得你花 5 分钟去试一试。
+
+去看看吧：www.bloome.im
+
+谢谢你读到这儿！
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDM3Nzc5NGU5OTI0MzY3NmJiMWNkMzg2MmI2NmQ0MzhfZDg0NmQ5OTMwYjc2ZjdhZDE3OTNlMTNlZWRhNDJiMzJfSUQ6NzY0Mzk5OTkwNTEyMzc5ODIxMl8xNzc5NzU3NDMxOjE3Nzk4NDM4MzFfVjM)

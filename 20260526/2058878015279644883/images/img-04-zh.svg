@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190">
+  <rect width="900" height="190" fill="#ffffff"/>
+  <style>
+    text{font-family:"Kaiti SC","STKaiti","PingFang SC","Hiragino Sans GB",sans-serif;fill:#111;letter-spacing:0}
+    .title{font-size:19px;font-weight:750}
+    .body{font-size:16px;font-weight:650}
+  </style>
+  <rect x="10" y="14" width="202" height="162" rx="20" fill="#aee0ff" stroke="#2d92d7" stroke-width="3"/>
+  <text x="26" y="43" class="title">那封没被理的邮件</text>
+  <text x="26" y="72" class="body">
+    <tspan x="26" dy="0">Maja 18 岁时</tspan>
+    <tspan x="26" dy="22">给 Calm CEO 写信。</tspan>
+    <tspan x="26" dy="22">具体 + 真诚，</tspan>
+    <tspan x="26" dy="22">换来顾问机会。</tspan>
+  </text>
+
+  <rect x="224" y="14" width="254" height="162" rx="20" fill="#ffe2a8" stroke="#ef9b18" stroke-width="3"/>
+  <text x="240" y="43" class="title">那个“不存在”的实习</text>
+  <text x="240" y="72" class="body">
+    <tspan x="240" dy="0">Cold LinkedIn 联系 Joel，</tspan>
+    <tspan x="240" dy="22">进入 Blackbird。</tspan>
+    <tspan x="240" dy="22">没有公开空缺，</tspan>
+    <tspan x="240" dy="22">她仍打开一扇新门。</tspan>
+  </text>
+
+  <rect x="490" y="14" width="194" height="162" rx="20" fill="#bdf3ca" stroke="#27b765" stroke-width="3"/>
+  <text x="506" y="43" class="title">文章带来的工作</text>
+  <text x="506" y="72" class="body">
+    <tspan x="506" dy="0">Jae 公开写</tspan>
+    <tspan x="506" dy="22">咖啡品鉴。</tspan>
+    <tspan x="506" dy="22">Eucalyptus CEO</tspan>
+    <tspan x="506" dy="22">看见后约咖啡，</tspan>
+    <tspan x="506" dy="22">最后录用。</tspan>
+  </text>
+
+  <rect x="696" y="14" width="194" height="162" rx="20" fill="#d5c0ff" stroke="#8b4be2" stroke-width="3"/>
+  <text x="712" y="43" class="title">Latent Space 指南</text>
+  <text x="712" y="72" class="body">
+    <tspan x="712" dy="0">Ethan 公开发布</tspan>
+    <tspan x="712" dy="22">AI 研究。</tspan>
+    <tspan x="712" dy="22">Discord 私信找上门。</tspan>
+    <tspan x="712" dy="22">成为 Leonardo.ai</tspan>
+    <tspan x="712" dy="22">联合创始人。</tspan>
+  </text>
+</svg>

@@ -1,0 +1,365 @@
+# 这些 Claude 全都能做，多数人却根本不知道
+
+**作者：** Anatoli Kopadze ([@AnatoliKopadze](https://x.com/AnatoliKopadze))  
+**日期：** 2026年5月22日  
+**来源：** [Claude Can Do All of This. Most People Have No Idea.](https://x.com/AnatoliKopadze/status/2057813254617858078)  
+
+很多人用 Claude，其实只用到了它的一小角。
+
+它能做的事，比你以为的要多得多。这篇文章想把这些功能一个个摆出来：每一个在哪儿找、怎么打开，再附上一段你可以马上复制去用的提示词。
+
+不用全都记住。通读一遍，挑出对你有用的，今天就花几分钟设置好。这点时间花下去，之后是天天在帮你省事。
+
+## 普通 Claude 里，其实藏着不少东西
+
+### 1. Projects：一个真正记得住你的 Claude
+
+事情是这样的：每次你打开一个新的 Claude 对话，它都从头开始。它不知道你叫什么、做什么、有什么习惯——一概不知。大多数人也就认了，于是每开一次新对话，就把自己重新介绍一遍。
+
+Projects 就是来治这个的。你建一个项目，把常用的文档传进去，再写好几条长期生效的说明，Claude 就会一直记着这些。下周再打开，它接着上回的地方往下走，不用你重头交代。
+
+如果你从没用过 Projects，那别急着看后面，先把这一项搞定。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2M4MGIyOTA2MmQ4YWM1NjYwODFmZGJjYmJjMjNjMDNfMjg3MzE5OWQ2MGJjZjQ0OTc0NmQxZGQ2ZGY2ODI4N2FfSUQ6NzY0NDAwMDkyMzY1MTYyNDE1MF8xNzc5NzU3Njc5OjE3Nzk4NDQwNzlfVjM)
+
+下面这段，可以直接粘到 Project Instructions 里当例子：
+
+> 你是我的内容研究助手。我运营一份面向技术读者、关于 AI 和加密货币的新闻通讯。
+>
+> 默认我的读者都懂基础。不用解释什么是 LLM，什么是区块链。
+>
+> 当我丢给你一个主题或一篇文章，你要做的是：
+> 1. 找出 3 个最反直觉、最让人意外的切入角度
+> 2. 把它和我可能错过的近期事件联系起来
+> 3. 给我建议，怎么把它写成一个故事，而不是一份总结
+>
+> 语气：直接，别用官腔，别堆废话。
+> 格式：短段落，除非我开口，否则不要用项目符号。
+> 永远别用"好问题"或"当然"来开头。
+
+### 2. Artifacts：在对话里就能用起来的小应用
+
+很多人以为 Claude 只会写字，造不出真东西。其实不是。
+
+Artifacts 是这样一件事：Claude 直接在对话里给你造一个能用的东西。不是一段你还得复制到别处的代码，而是侧边栏里一个活的产品——一个计算器、一个习惯打卡器、一个小游戏、一个带图表的看板。你打开它、点它、用它，全程不用离开对话。
+
+SVG 图形、交互式图表、Mermaid 流程图，全都支持。免费版就能用。可大多数人压根没试过。
+
+不妨试试这段：
+
+> 帮我做一个习惯打卡器，要做成一个能用的网页应用。
+>
+> 我想打卡 5 个每日习惯。
+>
+> 每天我能把它们勾掉。
+>
+> 给每个习惯显示一个 7 天连续打卡的计数。
+>
+> 漏掉一天，连续计数就清零。
+>
+> 设计：深色背景，干净极简。
+>
+> 复选框点起来要让人觉得爽——勾掉一个时加一个小动画。
+>
+> 刷新页面后，数据要还在。
+
+### 3. Adaptive Thinking：让它先想清楚，再开口
+
+这个功能，大多数人从没打开过。简单说，Extended Thinking 就是让 Claude 在回答前，先一步步把问题想透——而且这个琢磨的过程，你全程都能看到。
+
+简单的问题用不着它。可一旦碰上复杂的决定、要拆解的局面，或者任何你希望它真去想、而不是顺手套个模板的场合，结果的差别会很明显。
+
+打开它，把你之前问过的那个问题原样再问一遍，然后对比两次的答案。你会看出区别。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjE2NzI2MWUzOTAzODU2MTdkMjJkZjU4ZjBkYThiZjJfMDU1ZmQ3YWU2MjNlNDRmMWJlZjI5ZGE1YWJmYmI0MGFfSUQ6NzY0NDAwMDkzMTkwMTgzNjQ4N18xNzc5NzU3NjgwOjE3Nzk4NDQwODBfVjM)
+
+真要拿主意的时候，可以用这段：
+
+> 我在两个选项之间犹豫，希望你回答前先认真想一想。
+>
+> 选项 A：[描述选项 A]
+> 选项 B：[描述选项 B]
+>
+> 我的情况：[你的背景、限制、你最看重什么]
+>
+> 回应之前先把这件事想透。想想：
+> - 每个选项的连锁反应，以及再往后的影响
+> - 我在情绪上可能高估或低估了什么
+> - 我可能漏掉了哪些会改变结论的信息
+> - 万一出事，哪个选项的损失更小
+>
+> 然后给我你真正的建议，连同你的理由。
+
+### 4. Memory：记得你是谁的 Claude
+
+打开 Memory，Claude 会慢慢攒出一份关于你的档案：你的工作、你的项目、你喜欢怎么交流、你眼下在忙什么。
+
+然后你开一个全新的对话，它已经知道前因后果了。你再也不用从头介绍自己。
+
+这个功能默认是关着的。大多数人甚至不知道有它。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzNiYjE1ZjZmZGZlYzA3YWRiNDgzMzdiNjlmZGU5YTlfODdiNWE2OTU2OTZjZjEwOTJiODFjNjFiMWI5NTc1OGFfSUQ6NzY0NDAwMDkzODI2MDg5Mjg5M18xNzc5NzU3NjgwOjE3Nzk4NDQwODBfVjM)
+
+> 我想让你记住下面这些关于我的事，省得每次都问：
+>
+> 我叫 [名字]。我在 [公司或项目] 做 [职位]。
+> 我现在主要在忙 [你在做什么]。
+> 我的受众或客户是 [他们是谁]。
+>
+> 我找你帮忙时，除非我另说，默认就按这个背景来。
+> 我喜欢的沟通方式：[直接 / 详细 / 随意 / 正式]。
+> 我看着烦的回复方式：[比如项目符号、冗长的开场白、一堆限定语]。
+>
+> 现在把这些全存进记忆里。
+
+## 给它一个角色，一句话就全变了
+
+这就有意思了：Claude 不一定非得是"一个 AI 助手"。你给它一个具体的角色，它就会彻底入戏——怎么追问你、在哪儿顶你、什么事不让你蒙混过去，全都跟着变。下面几段提示词，挑一段复制，贴到新对话开头就行。
+
+### 5. 当一个私人心理咨询师
+
+大多数人其实是把 Claude 当点赞机器在用。说出一个困扰，它回一句"这确实挺难的"，再给五条建议，完事。
+
+可好的心理咨询不是这样的。下面这段提示词，能把它变得更像一个 CBT 治疗师——它问你问题，而不是急着给答案；它会质疑你的想法，而不是一味顺着你。
+
+你反复纠结的决定、说不清的焦虑，或者任何需要一个清醒旁观者的时候，它都用得上。
+
+> 你是一位有 20 年经验的认知行为治疗师。我要跟你说一件让我很纠结的事。
+>
+> 你的做法：
+> - 别急着给建议。先问问题，帮我看清自己的思维模式。
+> - 留意那些认知扭曲——把事情往最坏处想、非黑即白、揣测别人心思、预言坏结局——一旦发现就指出来。
+> - 一次只问一个问题。别一下子把我压垮。
+> - 当我顺着你的问题自己想明白时，那才算成功。别直接把答案塞给我。
+> - 温和但要诚实。如果我的想法明显跑偏了，别附和我。
+> - 如果我好像在躲着某件要紧事，直接点破。
+>
+> 别拿一段诊室式的开场白来开头。就问我，到底怎么了。
+
+### 6. 当一个不留情面的导师
+
+平时 Claude 是顺着你的。你说个想法，它帮你补充，替你的理由撑腰，专挑好的说。听着舒服，可这往往是帮倒忙。
+
+这段提示词把这套关掉。它不再附和，转而开始使劲挑毛病——找出你那些站不住脚的假设、被你忽略的环节，还有你的计划到底会在哪儿崩掉。
+
+听着确实让人有点难受。但正因如此，它才管用。
+
+> 你是一位极其诚实的导师。你创过业，也失败过好几回。你眼睁睁看着上百个人，带着十足的自信，犯下同样的错。
+>
+> 你的任务不是鼓励我——而是在我犯下一个代价高昂的错误之前，帮我躲开自己的盲区。
+>
+> 规则：
+> - 觉得我错了，就反对我。具体说清楚为什么。
+> - 把我没看到的指出来，尤其是那些我可能因为太想成功而故意不看的。
+> - 问我那些自己都没想到要问的硬问题。
+> - 一个主意要是不行，就说它不行。别拿"不过话说回来……"来打圆场。
+> - 每次回复的结尾，告诉我在往前走之前，最该想清楚的那一件事。
+>
+> 我马上要说一个想法。对它别客气。
+
+### 7. 当一个私人健身教练
+
+通用的健身建议满大街都是，可它不管你的作息、你的旧伤、你手边有什么器材、你到底想练成什么样。
+
+把你真实的数字交给 Claude，它会给你一份真正属于你的计划。不是模板，也不是哪个网站随手能搜到的东西，而是照着你的情况定的，等你练一阵反馈进展，它还会跟着调整。
+
+> 你是一位资深私人教练兼运动营养师。我想让你帮我做一份完整的训练方案。
+>
+> 我的情况：
+> 年龄：[年龄]
+> 当前体重 / 身体成分：[详情]
+> 目标：[减脂 / 增肌 / 提升耐力 / 一般健身]
+> 可用器材：[健身房 / 家里 / 只有哑铃 / 等等]
+> 每周能训练几天：[数字]
+> 每次多长时间：[分钟]
+> 有没有伤病或限制：[详情，或"无"]
+> 当前水平：[初学者 / 中级 / 高级]
+>
+> 帮我做一份 12 周的方案。把每一周的完整计划给我，包括动作、组数、次数和休息时间。再讲讲你为什么这么安排——我想搞懂背后的逻辑，而不是照着做。开始之后，我每周反馈一次，你根据情况调整。
+
+### 8. 提前演练一场难开口的对话
+
+很多人走进一场艰难的对话时，其实没准备好。他们清楚自己想说什么，却没想过对方会怎么回。
+
+那就让 Claude 来演对方，而且演得挺像。它会照着对方的反应来回你，你理由一软它就顶回来，不会轻易让你赢。这样练上几遍，真到了那场对话，你就从容多了。
+
+> 我要为一场难开口的对话做准备。我想让你扮演对方，好让我练一练。
+>
+> 这个人：[他们是谁——老板、客户、联合创始人，等等]
+> 我要说的话：[你要问他们或告诉他们什么]
+> 难在哪儿：[你在怕什么 / 哪里可能出岔子]
+> 这个人是什么样：[性格、平时怎么反应、在乎什么]
+>
+> 整场对话里都待在角色里。照这个人真实会有的反应来回——不是我希望他们的样子。我要是说了软话、没说服力的话，就顶回来。
+>
+> 每来回一次，短暂跳出角色，告诉我哪句有效、哪句不行——然后再钻回去。最后给我一份完整复盘：我做得好的地方、要改的地方，以及真正对话时最该记住的几件事。
+>
+> 从角色开始。等我先开口。
+
+### 9. 找一个专门唱反调的人
+
+你已经拿定主意了。该想的反对意见都想过了。你信了。
+
+可恰恰就是这个时候，最该让 Claude 来攻这个决定。不是客气几句、提点小担忧，而是把反对它的理由摆全：它最可能在哪三处翻车，以及那些你因为太想成功而看不见的东西。
+
+就现在，花五分钟。在你真正下手之前，而不是之后。
+
+> 我做了一个决定，希望你在我下手之前，把反对它的论据做到最强。
+>
+> 这个决定：[准确说出你打算做什么]
+> 我的理由：[你为什么觉得这是个好主意]
+> 我已经想过的：[你已经考虑过的反对意见]
+>
+> 你要做的：
+> - 把反对这个决定的论据做到最强。
+> - 别拿好处来平衡。我已经信了——我要的是反方那一面。
+> - 找出我那些可能站不住脚的假设。
+> - 描述这件事翻车或反噬的 3 种最现实的路径。
+> - 告诉我，我大概低估了什么。
+> - 告诉我，要相信哪些前提，这才会真的成为一个坏主意。
+>
+> 别留情。如果这是个错，我现在就得知道。
+
+## 还有些产品，大多数人根本不知道它们存在
+
+### 10. Claude in Chrome：和你看着同一个页面的 Claude
+
+大多数人是另开一个标签页用 Claude，再把需要的东西一段段复制过去。这是最费劲的走法。
+
+Claude in Chrome 是一个浏览器扩展。装上它，Claude 就能完整看到你当前这个标签页，还能在上面动手：读页面、点链接、填表单、跳转网址。你用大白话把任务讲清楚，然后就能走开，让它去做。
+
+装法很简单：去 Chrome 网上应用店搜 Claude for Chrome，安装，用你的 Claude 账号登录。点一下扩展图标，侧边栏就出来了。这下你打开的任何页面，它都能看、也能操作。
+
+可以交给它的任务，比如：
+
+> 我现在在这个招聘列表页面上。
+>
+> 把页面上能看到的每一条招聘都过一遍，提取：职位名称、公司名称、有写的话还有薪资范围，以及最重要的 3 项要求。
+>
+> 帮我做一张对比表格，按薪资从高到低排。
+>
+> 如果有好几页，就点进下一页接着做，直到所有结果都覆盖到。
+
+### 11. Claude Cowork：住在你桌面上的 Claude
+
+网页版的 Claude 碰不到你的电脑。它看不见你的文件，你只能把东西一份份手动粘进去。
+
+Cowork 是一个桌面应用，它让 Claude 能直接访问你的文件系统。它读你真实的文件、改文档、建新文件、整理文件夹，整个过程你不用往聊天框里复制任何东西。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2E1MjlmYjYyN2UzZTVjYjRlM2NjNjFmYTA5ZDI0MGZfZjI3ZTQ1NWE2ZDQ1YmFjOGQ3ZmE3MzM4YzlkNjQ1MTJfSUQ6NzY0NDAwMDk0NTYxMzgzNTQ0NF8xNzc5NzU3Njc5OjE3Nzk4NDQwNzlfVjM)
+
+### 12. Scheduled Tasks：你睡觉时还在替你干活的 Claude
+
+大多数人把 Claude 当成一个得自己主动去点的东西：打开对话，敲下请求，等结果，关掉标签页。
+
+Scheduled Tasks 改的就是这一点。任务设置好一次，Claude 就会按你定的时间和频率自己去跑，根本不用你来触发。每天早上也行，每个周一也行，每个小时也行。它跑完，把结果存进你的文件夹。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OWMyMjYyZDBjYmI3MDhhODI1OWY5Y2EzOGM5OTdhZDdfMmMyOTAxYzMxZmYwYTIwYTk3NzMxMDllNzFiMWMyMWVfSUQ6NzY0NDAwMDk1NTYxNjY3NzA1M18xNzc5NzU3Njc5OjE3Nzk4NDQwNzlfVjM)
+
+一个定时任务可以这么描述：
+
+> 每个工作日早上 7:30，做这几件事：
+> 1. 搜一搜过去 24 小时里最重要的 AI 和加密货币新闻
+> 2. 挑出 5 条最重要的——专挑那些让人意外、反直觉，或者对开发者和投资人有真实影响的
+> 3. 每条都写：标题、两句话的总结、为什么它重要
+> 4. 把结果存成我 /briefs 文件夹里的"brief-[日期].md"
+>
+> 语气保持直接、有分析。别废话。3 分钟内能读完。
+
+### 13. Cowork 里的 Skills：像装插件一样给它添本事
+
+Skills 是一组组事先做好的指令，专门给 Claude 在 Cowork 里添新本事。有了它，你不用每次都解释自己要干嘛——把某个技能装上一次，Claude 就知道这类活儿该怎么办，不管是做 PowerPoint、处理 PDF，还是跑一个固定流程。
+
+可以把它想成手机上的 App。光秃秃的手机也能用，可一旦装上合适的 App，能干的事就多多了。
+
+怎么找、怎么装：进 Cowork → Customize → Skills，就能看到已经装好的。想加新的，点左侧栏的 Browse plugins，挑一个插件装上。那个插件带的技能会自动出现在你的 Skills 标签里，等任务用得着，Claude 就会自己用上。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjRmZjI5NzNkZTJhOGVkYWE4MTM3ZDBkY2U1YjQxNGVfZDZjYTcyZDE3YjU5NTA1YjBjMWY2NGU1MzkzYjMyOWJfSUQ6NzY0NDAwMDk2MjA1NTQ0MTU5M18xNzc5NzU3NjgwOjE3Nzk4NDQwODBfVjM)
+
+### 14. CLAUDE.md：每次开工它都会自动读的一份规则
+
+在 Cowork 和 Claude Code 里，你可以在项目文件夹里建一个叫 CLAUDE.md 的文件。每个会话一开始，Claude 都会自动读它，不用你提醒。
+
+你的编码约定、你的写作风格、在你公司里有特殊含义的术语、品牌的语调要求——都可以写进去。写一次，Claude 就会在这个项目的每个会话里一直照着做。
+
+```markdown
+# Project: AI Newsletter
+
+## About this project
+Weekly newsletter about AI and crypto for builders and investors. 35,000 subscribers. Tone is direct, analytical, occasionally irreverent.
+
+## Writing rules
+- Short paragraphs. Max 3 sentences.
+- No bullet points in editorial content. Prose only.
+- No em dashes. Use hyphens or restructure the sentence.
+- Numbers beat adjectives. Write "saves 3 hours" not "saves significant time".
+- Never use: "delve", "groundbreaking", "game-changing", "leverage" (as a verb), "utilize".
+- Contractions are fine and encouraged.
+
+## Content rules
+- Assume the reader knows what an LLM is. Don't explain basics.
+- Lead with the most surprising or counterintuitive thing.
+- Every article needs a concrete "so what" - what should the reader do or think differently.
+
+## File structure
+- Drafts go in /drafts
+- Published articles go in /published with date prefix: YYYY-MM-DD-title.md
+- Research notes go in /research
+```
+
+### 15. Claude Code：在终端里写代码、跑测试、修 bug 的 AI
+
+有些人到现在还不知道，Claude 是能写代码的。而且不只是几段片段，而是完整的生产级代码、整个功能、复杂的重构。你用大白话说出要什么，它就写出来。
+
+Claude Code 又往前走了一步。它直接在你的开发环境里干活，而不是待在一个聊天窗口里。它读你真实的代码库，写新代码，跑测试，看报错，然后一遍遍地修，直到把事情做完。
+
+它能接 VS Code 和 JetBrains，你甚至可以把它塞进 GitHub Actions——之后它会自动帮你审查或撰写 pull request，你一根手指都不用动。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWNhMDZiZDE2ZjdmMmIzZTRlMzZkYTMwNTc0MWUyMDNfMzEzMzU3NTIwMjRhNThiYjA4ZTVlNzRkYzE0NjUwODRfSUQ6NzY0NDAwMDk3MTc1MjMyODM4MV8xNzc5NzU3NjgwOjE3Nzk4NDQwODBfVjM)
+
+### 16. Claude Design：专做视觉活儿的 AI
+
+这个产品，知道的人就更少了。Claude Design 是 Anthropic Labs 出的一个独立工具，专门干视觉的活儿——产品单页、路演 PPT、原型、落地页布局。
+
+你说出要什么，它给你做出来，还能导出成 PPTX、Canva、PDF 或 HTML。对不会设计的人来说，它把一场 3 小时的 Figma 折腾，换成了一场 10 分钟的对话。
+
+想用的话，直接打开 claude.ai/design 就行，这就是它的直达地址，没有别的步骤。
+
+![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmYzNWVjYmI0ODFiZGQxODAwM2M1M2M3YTViN2YzNDBfM2VhNzEyYjZkZTVhZDdhZTViZmEwMDFkYjJhYTczOWZfSUQ6NzY0NDAwMDk4MDkwNDEzNTg5NV8xNzc5NzU3NjgwOjE3Nzk4NDQwODBfVjM)
+
+### 17. Prompt Caching：API 调用成本能省九成（这条给开发者）
+
+这一条是给在 Claude API 上做开发的人看的。如果你的请求里总带着一大块重复的内容——一段很长的系统提示、一份参考文档、一整个代码库——那你每调用一次，都在为重新处理这同一批 token 付一次钱。
+
+Prompt Caching 把这块内容存到服务器端。之后的调用直接复用缓存，不再重新处理。命中缓存的那部分 token，成本最多能降九成，响应也明显更快。如果你在做大规模的东西却没用它，那基本就是在白白往外扔钱。
+
+做法是：在你想缓存的那个内容块上，加一句 `"cache_control": {"type": "ephemeral"}`。缓存保留 5 分钟，每用一次就重新计时。系统提示、大文档、工具定义，都管用。
+
+```json
+{
+  "model": "claude-opus-4-6",
+  "system": [
+    {
+      "type": "text",
+      "text": "[your large system prompt or reference document]",
+      "cache_control": {"type": "ephemeral"}
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "[user message - this changes each call]"
+    }
+  ]
+}
+
+// System prompt gets cached after the first call.
+// Every subsequent call within 5 minutes reuses the cache.
+// Cache hit = 90% cheaper + faster response.
+```
+
+说到底，看完这些，你对 Claude 的了解，已经超过大多数天天在用它的人了。
+
+别想着一口气全用上。从这份清单里挑一个，就一个，今天把它设置好。光是知道有这些功能，其实就已经成功了一半。
+
+等你准备好上下一个，再回到这篇文章来。

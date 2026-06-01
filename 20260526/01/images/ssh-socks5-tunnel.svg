@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-labelledby="title desc">
+  <title id="title">SSH SOCKS5 隧道示意图</title>
+  <desc id="desc">本地 2080 端口通过 SSH 加密隧道连接远程服务器，再由远程服务器访问目标网站。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#16a34a"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="620" fill="#f8fafc"/>
+  <path d="M0 502 C230 444 350 548 546 494 C720 446 862 430 1044 470 C1182 500 1290 474 1400 424 L1400 620 L0 620 Z" fill="#dbeafe" opacity="0.62"/>
+  <text x="74" y="82" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="36" font-weight="700" fill="#0f172a">SSH 动态端口转发：本地 SOCKS5 代理</text>
+  <text x="74" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="19" fill="#475569">本地 2080 端口接收流量，经 SSH 加密隧道送到远程服务器，再从远程服务器访问目标网站。</text>
+
+  <g transform="translate(82 220)" filter="url(#shadow)">
+    <rect x="0" y="0" width="296" height="232" rx="22" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="148" y="48" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">你的电脑</text>
+    <rect x="58" y="78" width="180" height="92" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="4"/>
+    <text x="148" y="116" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="21" font-weight="700" fill="#1d4ed8">本地 2080 端口</text>
+    <text x="148" y="147" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="19" fill="#1e40af">SOCKS5 代理</text>
+    <circle cx="86" cy="190" r="8" fill="#2563eb"/>
+    <circle cx="118" cy="190" r="8" fill="#60a5fa"/>
+    <circle cx="150" cy="190" r="8" fill="#93c5fd"/>
+    <circle cx="182" cy="190" r="8" fill="#bfdbfe"/>
+    <circle cx="214" cy="190" r="8" fill="#dbeafe"/>
+  </g>
+
+  <g transform="translate(798 220)" filter="url(#shadow)">
+    <rect x="0" y="0" width="296" height="232" rx="22" fill="#ffffff" stroke="#bbf7d0" stroke-width="2"/>
+    <text x="148" y="48" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">远程服务器</text>
+    <rect x="58" y="78" width="180" height="92" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+    <text x="148" y="116" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="21" font-weight="700" fill="#15803d">xxx.xxx.xxx.xxx</text>
+    <text x="148" y="147" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="19" fill="#166534">出口 IP</text>
+    <path d="M86 192 H210" stroke="#16a34a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M178 168 L214 192 L178 216" fill="none" stroke="#16a34a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(1190 250)" filter="url(#shadow)">
+    <rect x="0" y="0" width="150" height="172" rx="20" fill="#ffffff" stroke="#ddd6fe" stroke-width="2"/>
+    <circle cx="75" cy="76" r="46" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+    <path d="M29 76 H121 M75 30 C56 53 56 99 75 122 M75 30 C94 53 94 99 75 122 M38 52 C60 64 90 64 112 52 M38 100 C60 88 90 88 112 100" fill="none" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
+    <text x="75" y="210" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="22" font-weight="700" fill="#0f172a">目标网站</text>
+  </g>
+
+  <path d="M416 336 C512 248 664 248 760 336" fill="none" stroke="#2563eb" stroke-width="10" stroke-linecap="round" stroke-dasharray="22 18" marker-end="url(#arrowBlue)"/>
+  <path d="M760 356 C664 444 512 444 416 356" fill="none" stroke="#2563eb" stroke-width="10" stroke-linecap="round" stroke-dasharray="22 18" marker-end="url(#arrowBlue)"/>
+  <rect x="506" y="270" width="238" height="64" rx="32" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="625" y="310" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="22" font-weight="700" fill="#1d4ed8">SSH 加密隧道</text>
+
+  <path d="M1120 336 H1162" fill="none" stroke="#16a34a" stroke-width="10" stroke-linecap="round" marker-end="url(#arrowGreen)"/>
+  <text x="1140" y="300" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="18" font-weight="700" fill="#15803d">出站访问</text>
+
+  <rect x="82" y="502" width="448" height="52" rx="26" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="306" y="535" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="18" fill="#475569">浏览器 / curl / 应用程序 → 127.0.0.1:2080</text>
+  <rect x="798" y="502" width="364" height="52" rx="26" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="980" y="535" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','PingFang SC',Arial,sans-serif" font-size="18" fill="#475569">目标网站看到远程服务器 IP</text>
+</svg>

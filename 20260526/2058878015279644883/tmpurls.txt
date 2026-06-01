@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": {
+    "tmp_download_urls": [
+      {
+        "file_token": "MMgobEJz4oU95sxsapuc07Jzn6f",
+        "tmp_download_url": "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzIwZGFlYzFiMzNhMDQ0NzU3OWFlMGZhYjU3MDA1MDFfOTc3OGUyMjA4YjMzOGU3ZTQ1MTYxN2Y5M2Q2ZTNmOWNfSUQ6NzY0Mzk5OTcwOTMzODMwNzc2NF8xNzc5NzU3Mzg1OjE3Nzk4NDM3ODVfVjM"
+      },
+      {
+        "file_token": "JJXVbyRt1oFt7GxQRClcUbtgnIX",
+        "tmp_download_url": "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGNiMTI3Y2NkNDViZTAxMThiMmNjMDE4MzNiNjQwZTdfNjFhMzc1OGFjNGMzYjM1NTEzZjBiMmY4OGI3MWYxYWFfSUQ6NzY0Mzk5OTcxNzQ4Nzg4OTU5M18xNzc5NzU3Mzg1OjE3Nzk4NDM3ODVfVjM"
+      },
+      {
+        "file_token": "Ou3cbZ8Bloz5eqx4YDIc7jY2nvd",
+        "tmp_download_url": "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjE2ZDZiYWJjZmI4YjVjYzQyMmNjMzYxMjYzNjdhMmRfN2JhMmViYjA5ZTgzNjhkMWE1N2E0NTY2OGM3OWVmMzJfSUQ6NzY0Mzk5OTcyNDczNTc0NTIwNV8xNzc5NzU3Mzg1OjE3Nzk4NDM3ODVfVjM"
+      },
+      {
+        "file_token": "Me76b9kaLoM2UFxUtuNcsvKSnIg",
+        "tmp_download_url": "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTQyMmEyMzE2OTJlNzVlYjExMjA3N2VlOTMyYmQ2MzdfZjE2ZTBlYTAyYWQyZTE2MzE1MTUzN2Y1YTE0ZmJjNjRfSUQ6NzY0Mzk5OTY5MjcxNjE2NjM2OF8xNzc5NzU3Mzg1OjE3Nzk4NDM3ODVfVjM"
+      },
+      {
+        "file_token": "TZMDb1VqVoqrTtxjMYlcpwATnJc",
+        "tmp_download_url": "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzU5OGVkNzRmMTMxOTEwOGU5YjVhYWNlYTgxYTgxMmNfNmFiNTZmOGY4MWVmNGQ4OTgyYjY2N2NlZGVhNjQ2ZjVfSUQ6NzY0Mzk5OTcwNDIyNDgxMjIxN18xNzc5NzU3Mzg1OjE3Nzk4NDM3ODVfVjM"
+      }
+    ]
+  },
+  "msg": "success"
+}

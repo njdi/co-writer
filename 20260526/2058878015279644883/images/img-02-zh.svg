@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1278" height="956" viewBox="0 0 1278 956">
+  <rect width="1278" height="956" fill="#ffffff"/>
+  <style>
+    text{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;fill:#111;letter-spacing:0}
+    .title{font-size:40px;font-weight:800}
+    .step{font-size:25px;font-weight:800;fill:#666}
+    .head{font-size:32px;font-weight:800}
+    .body{font-size:28px;font-weight:500;fill:#333}
+  </style>
+  <text x="30" y="80" class="title">五步流程</text>
+
+  <rect x="31" y="140" width="390" height="360" rx="14" fill="#f4f3ee"/>
+  <text x="66" y="195" class="step">第 1 步</text>
+  <text x="66" y="240" class="head">选准目标</text>
+  <text x="66" y="290" class="body">
+    <tspan x="66" dy="0">不是一个职位头衔，</tspan>
+    <tspan x="66" dy="41">而是一个人或一个</tspan>
+    <tspan x="66" dy="41">正在做你关心之事</tspan>
+    <tspan x="66" dy="41">的团队。要具体。</tspan>
+    <tspan x="66" dy="41">泛泛的兴趣没人看见。</tspan>
+  </text>
+
+  <rect x="446" y="140" width="390" height="360" rx="14" fill="#f4f3ee"/>
+  <text x="480" y="195" class="step">第 2 步</text>
+  <text x="480" y="240" class="head">研究他们的问题</text>
+  <text x="480" y="290" class="body">
+    <tspan x="480" dy="0">读他们发布的东西，</tspan>
+    <tspan x="480" dy="41">看他们正在构建什么。</tspan>
+    <tspan x="480" dy="41">弄清他们卡在哪里，</tspan>
+    <tspan x="480" dy="41">或下一步想推动什么。</tspan>
+  </text>
+
+  <rect x="861" y="140" width="390" height="360" rx="14" fill="#f4f3ee"/>
+  <text x="895" y="195" class="step">第 3 步</text>
+  <text x="895" y="240" class="head">做出一个东西</text>
+  <text x="895" y="290" class="body">
+    <tspan x="895" dy="0">一份拆解、一份备忘录，</tspan>
+    <tspan x="895" dy="41">一个小原型，或一段</tspan>
+    <tspan x="895" dy="41">犀利分析。它要证明：</tspan>
+    <tspan x="895" dy="41">你已经在认真思考</tspan>
+    <tspan x="895" dy="41">他们的问题。</tspan>
+  </text>
+
+  <rect x="31" y="524" width="390" height="395" rx="14" fill="#f4f3ee"/>
+  <text x="66" y="582" class="step">第 4 步</text>
+  <text x="66" y="626" class="head">发给一个真人</text>
+  <text x="66" y="676" class="body">
+    <tspan x="66" dy="0">不是发到招聘页。</tspan>
+    <tspan x="66" dy="41">找到真正相关的人，</tspan>
+    <tspan x="66" dy="41">直接写邮件给他。</tspan>
+    <tspan x="66" dy="41">短、具体、慷慨。</tspan>
+    <tspan x="66" dy="41">先给，再开口。</tspan>
+  </text>
+
+  <rect x="446" y="524" width="390" height="395" rx="14" fill="#f4f3ee"/>
+  <text x="480" y="582" class="step">第 5 步</text>
+  <text x="480" y="626" class="head">让别人找得到你</text>
+  <text x="480" y="676" class="body">
+    <tspan x="480" dy="0">发布你正在学习的东西。</tspan>
+    <tspan x="480" dy="41">公开写作，公开构建。</tspan>
+    <tspan x="480" dy="41">让你的作品去到</tspan>
+    <tspan x="480" dy="41">你还没进过的房间。</tspan>
+  </text>
+</svg>

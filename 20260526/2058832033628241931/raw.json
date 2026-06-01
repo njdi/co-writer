@@ -1,0 +1,113 @@
+{
+  "url": "https://x.com/sairahul1/status/2058832033628241931",
+  "sequence": [
+    {
+      "type": "text",
+      "content": "Rahul\n@sairahul1\nSubscribe"
+    },
+    {
+      "type": "image",
+      "file": "cover.jpg"
+    },
+    {
+      "type": "text",
+      "content": "How to Build a Software Factory with Claude Code That Ships Features While You Sleep\n14\n67\n525\n1M\nI thought I was using AI to code.\nI was actually just typing faster.\nHere is the difference — and the 7-agent system that changed everything.\nSave this. It will save you months.\nTHE PROBLEM NOBODY TALKS ABOUT\nThe loop that feels productive but isn't:"
+    },
+    {
+      "type": "image",
+      "file": "img-01.jpg"
+    },
+    {
+      "type": "text",
+      "content": "→ Ask Claude to build a feature → It generates code → Something breaks → Paste the error back → It patches it → Something else breaks → Ask again\nDay 1: this feels like magic.\nDay 30: you're spending more time supervising AI than you used to spend writing code.\nSame logic appears in 3 different places.\nClaude forgot the convention you set up two weeks ago.\nNew features break old ones.\nTests are missing or shallow.\nYou wake up and realize: the AI isn't failing.\nYour workflow is.\nThe real problem is structural.\nWhen you type \"build this feature\" into Claude Code, you're asking one AI session to be:\n→ Product analyst → Architect → Backend engineer → Frontend engineer → Test engineer → Code reviewer\nAll at once.\nIn the same messy conversation.\nWrong assumptions in the plan become wrong database models.\nWrong database models become wrong APIs.\nWrong APIs become wrong UIs.\nBy the time you notice, the mistake has spread everywhere.\nThis is called vibe coding.\nAnd it has a hard ceiling.\nTHE SHIFT: FROM VIBE CODING TO A SOFTWARE FACTORY\nWhat actually changes everything:"
+    },
+    {
+      "type": "image",
+      "file": "img-02.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Real engineering teams don't work in one big conversation.\nDifferent people own different jobs:\n→ Someone clarifies the user problem → Someone thinks about architecture → Someone builds the API → Someone builds the UI → Someone thinks about edge cases → Someone reviews\nWhen you collapse all of that into one AI session, mistakes compound silently.\nThe fix is to split the work across specialized agents.\nEach agent gets: → One focused job → Its own clean context window → Only the tools it actually needs → Strict rules about what it cannot touch\nThe result: a software factory.\nOne developer + seven focused agents = a coordinated team.\nHere are the seven agents that make it work.\nTHE 7 AGENTS\nAgent 1: The Codebase Researcher"
+    },
+    {
+      "type": "image",
+      "file": "img-03.jpg"
+    },
+    {
+      "type": "text",
+      "content": "The biggest mistake developers make with AI?\nAsking for code as the first move.\nThe AI accepts the prompt, makes guesses to fill the gaps, and starts generating.\nThat's when bad designs sneak in.\nThe Codebase Researcher fixes this.\nIts only job: inspect the codebase and explain how things work — before a single line is written.\nWhat it does: → Maps the relevant files and their roles → Documents existing patterns to follow → Finds similar features already built → Flags risks (timezone, multi-tenant, retry logic) → Lists what tests will need updating\nWhat it cannot do: → Edit files (read-only access only) → Run any command that modifies state → Make assumptions — it asks instead\nTools: Read, Grep, Glob only.\nThe rule: explore before you build, every single time.\nThe Researcher runs first. Always.\nAgent 2: The Story Writer"
+    },
+    {
+      "type": "image",
+      "file": "img-04.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Most features fail not because the code was wrong.\nBut because the problem was never clearly defined.\nThe Story Writer turns a rough feature idea into a real user story before any technical decisions are made.\nInput it receives: → Your rough feature description → The Researcher's findings\nWhat it produces:\nOne user story:\"As a [role], I want [behaviour], so that [outcome].\"\nAcceptance criteria:Statements a test can verify directly. Happy path. Failure paths. Business rules.\nEdge cases:Boundaries, retries, multi-tenant concerns.\nOut of scope:What is explicitly NOT being built.\nOpen questions:Things it genuinely doesn't know — never guesses.\nWhat it cannot do: → Invent business rules → Write any code or technical design → Move forward if something is genuinely unclear\nTools: Read only.\nThe rule: you read this story and approve it before anything else happens.\nThis is the human checkpoint that saves everything downstream.\nAgent 3: The Spec Writer"
+    },
+    {
+      "type": "image",
+      "file": "img-05.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Once the story is approved, the Spec Writer turns it into a technical brief.\nThis is the blueprint every build agent follows.\nInput it receives: → Your approved user story → The Researcher's findings → Your project's CLAUDE.md rules\nWhat it produces:\n→ Data model changes (fields, types, migrations) → Background flow / process flow → API changes (endpoints, request/response shapes) → Frontend changes (components, pages, hooks) → Tests required (success, failure, edge cases) → Risks and open questions → Every file that will change\nWhat it cannot do: → Edit any file → Invent new infrastructure — calls it out explicitly instead → Skip tenant isolation or timezone concerns → Leave questions unanswered\nTools: Read, Grep, Glob only.\nThe rule: this brief is the second human checkpoint.\nYou read it and approve it before a single file is touched.\nIf you see \"store IDs in memory\" — that's your red flag.\nCatch it now. Not after 10 files have been changed.\nAgent 4: The Backend Builder"
+    },
+    {
+      "type": "image",
+      "file": "img-06.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Now the building starts.\nThe Backend Builder implements the backend half of the feature — and only the backend half.\nInput it receives: → Approved technical brief → Researcher's findings → Your project's CLAUDE.md\nWhat it builds: → API routes → Services and business logic → Database access and migrations → Background jobs → Unit tests for everything it writes\nWhat it cannot do: → Touch React components, pages, or client-side hooks (that's Agent 5) → Invent new dependencies without instruction → Modify files outside agreed scope → Stop without running typecheck, lint, and the test suite\nAfter finishing, it returns a summary: → Every file added or edited → Every existing helper or pattern reused → Any CLAUDE.md rule that would have helped\nTools: Read, Edit, Write, Bash — scoped to backend folders only.\nThe separation is the point.\nBackend Builder cannot accidentally break the frontend. Ever.\nAgent 5: The Frontend Builder"
+    },
+    {
+      "type": "image",
+      "file": "img-07.jpg"
+    },
+    {
+      "type": "text",
+      "content": "The Frontend Builder implements the UI half — and only the UI half.\nIt reads the Backend Builder's summary first.\nThis matters.\nIt consumes the API exactly as the backend produced it.\nIt does not invent new endpoints.\nIf the API shape is wrong for the UI, it surfaces the mismatch as feedback — not as a patch.\nInput it receives: → Approved technical brief → Researcher's findings → Backend Builder's summary (the API contract)\nWhat it builds: → React components and pages → Client-side hooks and state → Loading and error states → Component and unit tests for everything it writes\nWhat it cannot do: → Touch services, API routes, workers, or migrations (that's Agent 4) → Invent endpoints or response shapes → Add dependencies without instruction → Stop without running typecheck, lint, and the test suite\nTools: Read, Edit, Write, Bash — scoped to frontend folders only.\nTwo builders.\nTwo clean context windows.\nZero chance one breaks the other's work.\nAgent 6: The Test Verifier"
+    },
+    {
+      "type": "image",
+      "file": "img-08.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Both builders wrote unit tests for their own code.\nThat's not enough.\nThe Test Verifier does one thing only: prove that the feature actually does what the user story said it should.\nIt writes acceptance tests.\nNot unit tests.\nAcceptance tests.\nThese test the feature from the outside — the way a real user would experience it.\nInput it receives: → Approved user story (with all acceptance criteria) → Approved technical brief → Both builders' summaries\nWhat it produces: → One acceptance test file covering every acceptance criterion → A report: which criteria passed, which failed, which can't be covered cleanly\nWhat it cannot do: → Modify any backend or frontend code → Invent workarounds for untestable criteria → Mark a criterion as covered if it genuinely isn't\nIf a test fails: the feature doesn't satisfy the story.\nIt reports exactly which criterion failed.\nIt does not patch the code.\nThat goes back to the right builder.\nTools: Read, Edit, Write (test files only), Bash.\nThe rule: you don't have a feature until the acceptance tests pass.\nAgent 7: The Implementation Validator"
+    },
+    {
+      "type": "image",
+      "file": "img-09.jpg"
+    },
+    {
+      "type": "text",
+      "content": "This is the agent that catches everything everyone else missed.\nThe Validator compares the current implementation against the approved story and brief — and reports gaps.\nIt never fixes anything.\nIt just tells the truth.\nEvery check it runs, every time:\n→ Acceptance criteria from the story not yet implemented → Failure paths with no test coverage → Security issues: missing auth checks, tenant isolation gaps, secrets in logs, raw errors exposed to clients → Files changed outside agreed scope → Patterns inconsistent with CLAUDE.md or existing code → Duplicate logic that should reuse existing helpers → Timezone or multi-tenant concerns from the brief that were quietly skipped\nOutput is always grouped by severity:\nCritical — must fix before merge Important — should fix before merge Minor — opinion-based, reviewer's call\nEvery finding includes the file path and line number.\nIf there's nothing wrong, it says so plainly.\nIt doesn't invent issues to look thorough.\nTools: Read, Grep, Glob only.\nThis agent is why the factory is trustworthy.\nA self-graded paper is worthless.\nA validator that sees only what's on disk — not how it was written — is honest.\nHOW THE CHAIN RUNS\nThe full flow — one prompt starts it all:"
+    },
+    {
+      "type": "image",
+      "file": "img-10.jpg"
+    },
+    {
+      "type": "text",
+      "content": "You open Claude Code and type:\n\"Build invoice reminders for invoices unpaid for more than 7 days.\"\nHere's what happens without you typing anything else:\nStep 1 → Researcher maps your invoice, payment, and email code. Returns relevant files, existing patterns, risks.\nStep 2 → Story Writer produces the user story and acceptance criteria.\n⏸ PAUSE: You read and approve the story.\nStep 3 → Spec Writer turns the approved story into a technical brief.\n⏸ PAUSE: You read and approve the brief.(Catch that \"store IDs in memory\" mistake right here.)\nStep 4 → Backend Builder implements the service, API route, BullMQ job, and unit tests. Returns: files changed, patterns reused, all tests green.\nStep 5 → Frontend Builder reads the Backend Builder's API summary, builds the admin UI tile and reminder button, writes component tests. All tests green.\nStep 6 → Test Verifier writes acceptance tests for all six acceptance criteria. Reports: 7 passing, 1 failing — manual trigger doesn't check tenant ownership.\nStep 7 → Validator finds it. Reports as Critical with file path and line number.\n→ Loop back to Backend Builder. Fix applied. All 8 acceptance tests pass. Validator runs again. Clean.\n⏸ PAUSE: You review and open the PR.\nThree human checkpoints.\nEverything else runs on its own.\nTHE FOUNDATION: BEFORE AGENTS WORK, YOU NEED THIS\nCLAUDE.md — the memory that survives every session:"
+    },
+    {
+      "type": "image",
+      "file": "img-11.jpg"
+    },
+    {
+      "type": "text",
+      "content": "Every time you open Claude Code, it starts with zero memory.\nCLAUDE.md fixes this.\nIt's a Markdown file at your repo root that loads automatically every session.\nIt's where permanent project facts live:\n→ Your stack (Next.js App Router, Node.js, Prisma, BullMQ, Resend) → Your commands (npm run dev, npm test, npx prisma migrate dev) → Architecture rules (\"Business logic lives in services. API routes stay thin.\") → What not to do (\"Do not add cron — use BullMQ. Do not log raw payment payloads.\") → Pointers to deeper docs (docs/billing.md, docs/architecture.md)\nKeep it 100-300 lines.\nEvery time AI makes a mistake that surprises you, ask: would a rule in CLAUDE.md have prevented this?\nAdd the rule.\nIn a few weeks, your CLAUDE.md becomes a record of every assumption the AI got wrong — and your sessions get noticeably better.\nContext drift — the silent killer:\nMost Claude Code sessions don't fail dramatically.\nThey drift.\nA wrong assumption enters the context.\nThe model keeps building on top of it.\nYou ask Claude to build subscription management.\nIt designs: User → Subscription.\nYou remember: subscriptions belong to the company, not the user.\nIf you just say \"no, subscriptions belong to companies\" — Claude patches.\nNow you have both user.subscriptionId and company.subscriptionId floating around.\nRule:\n→ Small typo? Correct it inline. → Wrong architectural assumption? Throw the conversation away and start fresh with the right assumption baked into the first prompt.\nA clean session with the right mental model beats a patched session every time.\nTHE RESULTS: WHAT ACTUALLY CHANGES\nBefore the factory:\n→ Vibe coding loop: prompt → generate → error → patch → repeat → Session context fills up with noise → Wrong assumptions compound into broken features → One engineer can only do one thing at a time → Every feature waits for the right person to be available\nAfter the factory:\n→ Structured chain: research → story → brief → build → verify → validate → Each agent gets a clean context window with only what it needs → Wrong assumptions get caught at the brief approval — not after 10 files → One engineer ships a complete vertical slice: backend, frontend, tests, validation → The team's best knowledge lives in the agents — not trapped in people\nThe real shift:\nThe payments specialist builds a payments-integration agent.\nNow every engineer on the team can ship a feature that touches billing.\nWithout waiting.\nWithout a handoff.\nThe frontend lead's component patterns live in the frontend-builder agent.\nThe DevOps engineer's CI checks live in a hook.\nThe QA lead's edge cases live in the test-verifier rules.\nExpert knowledge, shared as agents.\nNot trapped in availability.\nHOW TO BUILD YOURS THIS WEEKEND\n8-step setup checklist:"
+    },
+    {
+      "type": "image",
+      "file": "img-12.jpg"
+    },
+    {
+      "type": "text",
+      "content": "1. Install Claude Code → code.claude.com\n2. Create the folder structure: → .claude/agents/ → .claude/skills/feature-factory/ → .claude/skills/build-with-tests/ → .claude/hooks/\n3. Write your CLAUDE.md (100–300 lines: stack, commands, architecture rules, don't-do list)\n4. Create the 7 agents using the /agents command in Claude Code. Describe each agent's role. Claude writes the file. You review and commit.\n5. Create the feature-factory orchestrator skill. Ask Claude to write it — it reads your 7 agent files and wires the chain.\n6. Create the build-with-tests skill. Describes how your team builds: match existing patterns, write tests alongside code, run typecheck at the end.\n7. Add a pre-commit hook. Blocks commits that include .env, .key, .pem, or secrets.json files. Takes 5 minutes. Prevents disasters.\n8. Run one real feature through the full chain. Pick something small. Watch where it stumbles. Add rules. The factory tunes itself.\nTotal time: 2–3 hours.\nThen run a few features.\nAfter 3–4, the factory knows your codebase.\nYou'll spend less time supervising.\nMore time deciding what to build next.\nTHE 7 AGENTS — QUICK REFERENCE\n→ Researcher — maps the code before anything is built (Read only) → Story Writer — turns idea into user story with acceptance criteria (Read only) → Spec Writer — turns story into technical brief (Read only) → Backend Builder — builds API, services, jobs, unit tests (backend folders only) → Frontend Builder — builds components, pages, hooks, UI tests (frontend folders only) → Test Verifier — writes acceptance tests against the user story (test files only) → Validator — compares implementation against story and brief, reports gaps (Read only)\n3 human checkpoints:→ Approve the story → Approve the brief → Approve the PR\nEverything else runs on its own.\nMost developers using Claude Code are still vibe coding.\nPrompting → generating → patching → hoping.\nThat's not wrong.\nIt's just a ceiling.\nThe factory doesn't remove you from the process.\nIt removes you from the parts that don't need you.\nYou stay in the loop where your judgment matters:\nIs this the right problem? Is this the right design? Is this safe to ship?\nThe agents handle everything in between.\nThat's the difference between using AI as a faster keyboard —\nand using AI as a coordinated team.\nIf this was useful:\n→ Repost to share it with your network → Follow @sairahul1 for more breakdowns like this → Bookmark this — you'll want to reference the 7 agents\nI write about AI, building products, and systems that work while you sleep.\nWant to publish your own Article?\nUpgrade to Premium\n4:46 PM · May 25, 2026\n·\n1M\n Views\n14\n67\n525\n2.9K\nRelevant\nView quotes"
+    }
+  ]
+}

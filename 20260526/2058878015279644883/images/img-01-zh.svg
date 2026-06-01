@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1689" height="723" viewBox="0 0 1689 723">
+  <rect width="1689" height="723" fill="#ffffff"/>
+  <style>
+    text{font-family:"Kaiti SC","STKaiti","PingFang SC","Hiragino Sans GB",sans-serif;fill:#111;letter-spacing:0}
+    .title{font-size:38px;font-weight:700}
+    .h{font-size:36px;font-weight:700}
+    .body{font-size:30px;font-weight:600}
+  </style>
+
+  <rect x="20" y="22" width="1648" height="178" rx="42" fill="#f4efff" stroke="#8b4be2" stroke-width="5"/>
+  <text x="844" y="70" class="title" fill="#5b2ab8" text-anchor="middle">什么是一份工作？</text>
+  <text x="60" y="130" class="body">
+    <tspan x="60" dy="0">一份工作，就是一堆有人急着想解决、并愿意花钱请别人来解决的问题。</tspan>
+  </text>
+
+  <rect x="20" y="240" width="600" height="278" rx="42" fill="#dfeaff" stroke="#378bd7" stroke-width="5"/>
+  <text x="62" y="295" class="h" fill="#1970cc">一家公司是...</text>
+  <text x="62" y="345" class="body">
+    <tspan x="62" dy="0">一群想把某件事做成的人。</tspan>
+    <tspan x="62" dy="40">他们有看得见的岗位，</tspan>
+    <tspan x="62" dy="40">也有看不见的岗位：</tspan>
+    <tspan x="62" dy="40">那些还没被说出口、但</tspan>
+    <tspan x="62" dy="40">一直卡在边缘的问题。</tspan>
+  </text>
+
+  <line x1="620" y1="370" x2="1005" y2="375" stroke="#378bd7" stroke-width="5"/>
+  <path d="M966 352 L1008 375 L966 398" fill="none" stroke="#378bd7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1020" y="245" width="650" height="260" rx="44" fill="#dff8df" stroke="#1eba65" stroke-width="5"/>
+  <text x="1350" y="300" class="h" fill="#16814b" text-anchor="middle">更值得问的问题：</text>
+  <text x="1060" y="355" class="body">
+    <tspan x="1060" dy="0">谁正在做我真正在意的事？</tspan>
+    <tspan x="1060" dy="38">他们想把什么做成？</tspan>
+    <tspan x="1060" dy="38">他们卡在了哪里？</tspan>
+    <tspan x="1060" dy="38">我能提供什么，帮他们往前走？</tspan>
+  </text>
+
+  <rect x="20" y="540" width="600" height="163" rx="38" fill="#ffd5d5" stroke="#e43b3b" stroke-width="5"/>
+  <text x="62" y="600" class="h" fill="#b01f1f">正门</text>
+  <text x="62" y="647" class="body">
+    <tspan x="62" dy="0">招聘网站。拥挤、低效。</tspan>
+    <tspan x="62" dy="38">到处都是 AI 打磨过的申请。</tspan>
+  </text>
+
+  <text x="815" y="630" class="body" fill="#8b4be2" text-anchor="middle">VS</text>
+  <line x1="620" y1="618" x2="1005" y2="620" stroke="#8b4be2" stroke-width="5"/>
+  <path d="M966 598 L1008 620 L966 642" fill="none" stroke="#8b4be2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1020" y="532" width="650" height="170" rx="38" fill="#c9f3ca" stroke="#1eba65" stroke-width="5"/>
+  <text x="1350" y="580" class="h" fill="#16814b" text-anchor="middle">侧门</text>
+  <text x="1052" y="635" class="body">
+    <tspan x="1052" dy="0">发出不一样的信号，绕过灰色机器，</tspan>
+    <tspan x="1052" dy="38">直接建立人与人的连接。</tspan>
+  </text>
+</svg>
